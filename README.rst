@@ -1,3 +1,19 @@
+Statistik Falsch Gemacht
+------------------------
+
+In diesem Repository ist der `reStructuredText <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__ code für eine deutsche Übersetzung von `»Statistics Done Wrong« <http://www.statisticsdonewrong.com/index.html>`__ ein Buch über häufige Fehler und Missverständnisse in wissenschaftlicher Datenanalyse und Statistik. 
+
+Beitragen
+~~~~~~~~~
+
+Der Orignaltext wird momentan einfach `auskommentiert <http://docutils.sourceforge.net/docs/user/rst/quickref.html#comments>`__ und die Übersetzung darüber eingefügt.
+
+Fragen/Unsicherheiten bei der Übersetzung können im Bugtracker festgehalten werden oder mittels *.. TODO:* direkt in einem Kommentar im Text. 
+
+
+
+
+
 Statistics Done Wrong
 ---------------------
 
