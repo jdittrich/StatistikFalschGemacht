@@ -196,8 +196,7 @@ in collisions and pedestrian accidents (sometimes up to 100% increases). [Hauer2
 
 Die Misinterpretation von Studien mit geringer Teststärke kostet Leben.
 
-..  The misinterpretation of underpowered
-studies cost lives.
+..  The misinterpretation of underpowered studies cost lives.
 
 .. :cite:p:`Hauer:2004fz,Preusser:1982gp`
 

@@ -2,7 +2,7 @@ Einführung in die Datenanalyse
 ==============================
 
 .. An introduction to data analysis
- ================================
+.. ================================
 
 In experimentellen Wissenschaften läuft Forschung meist darauf hinaus, Veränderungen zu messen. Wirkt eine Medikament besser als ein anderes? Synthetisieren Zellen mit einer bestimmten Genvariante mehr Enzyme als andere Zellen? Entdeckt ein Algorithmus Pulsare besser als ein anderer? Beschleunigt eine Katalysator die Reaktion stärker als ein anderer?
 
@@ -20,7 +20,8 @@ Aber nicht alle Erkältungen sind gleich. Vielleicht dauert die durchschnittlich
 
 .. But all colds aren’t identical. Perhaps the average cold lasts a week, but some last only a few days, and others drag on for two weeks or more, straining the household Kleenex supply. It's possible that the group of ten patients receiving genuine medicine will be the unlucky types to get two-week colds, and so you'll falsely conclude that the medicine makes things worse. How can you tell if you've proven your medicine works, rather than just proving that some patients are unlucky?
 
-.. index:: ! p werte
+
+.. .. index:: ! p werte
 
 .. _p-werte:
 
@@ -28,7 +29,7 @@ Die Macht der p-Werte
 -----------------------
 
 .. The power of *p* values
------------------------
+.. -----------------------
 
 Eine Statistik kann uns die Antwort geben: Wenn wir die *Verteilung* der typischen Erkältungsdauern haben – wieviele Patienten ungefähr eine kurze, durchschnittliche oder lange Erkältung haben – können wir errechnen, wie wahrscheinlich es ist, dass eine zufällige Auswahl von Patienten (»Stichprobe«» oder »Sample«) im Durchschnitt länger, kürzer oder durchschnittlich lange erkältet sind. Indem wir einen statistischen Test durchführen können wir folgenden Frage beantworten: »Wenn meine Medizin total unwirksam wäre, wie groß wäre die Wahrscheinlichkeit, dass ich auf den Durchschnitt der Erkältungsdauer komme, den ich für meine Stichprobe errechnet habe?
 
