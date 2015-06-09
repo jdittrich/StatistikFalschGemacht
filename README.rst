@@ -3,38 +3,7 @@ Statistik Falsch Gemacht
 
 In diesem Repository ist der `reStructuredText <http://docutils.sourceforge.net/docs/user/rst/quickref.html>`__ code für eine deutsche Übersetzung von `»Statistics Done Wrong« <http://www.statisticsdonewrong.com/index.html>`__ ein Buch über häufige Fehler und Missverständnisse in wissenschaftlicher Datenanalyse und Statistik.
 
-Statistik falsch gemacht
-========================
-
-Der bedauerlicherweise komplette Ratgeber
-------------------------------------------
-
-*von* `Alex Reinhart <http://www.refsmmat.com>`__
-
-Wenn du ein praktizierender Wissenschaflter bist, nutzt du vermutlich Statistische Auswertungen um deine Daten zu analysieren. Von grundlegenden t-Tests und der Berechnung von Standardabweichungen bis zu Cox-Regression und propensity score matching - wir nutzen Statistik um Antworten auf wissenschaftliche Probleme zu bekommen.
-
-Das ist unglücklich, denn die meisten von uns haben keine Ahnung von Statistik.
-
-*Statistik falsch gemacht* ist ein Ratgeber zu den populärsten statistischen Fehlern und Ausrutschern, die Wissenschaftlern tagtäglich passieren - im Labor und in peer-reviewten Journals. Viele dieser Fehler sind weit verbreitet und ziehen Erkentnisse vieler tausend Veröffentlichungen in Zweifel. *Statistik falsch gemacht* nimmt kein Vorwissen zu Statistik an - du kannst es vor deinem ersten Statistikkurs leden oder nach dreißig Jahren wissenschaftlicher Tätigkeit.
-
-Inhalt
-------
-
-`Einleitung <introduction.rst>`_
-`<data-analysis.rst>
-`Teststärke <power.rst>`_
-`Pseudoreplikation <pseudoreplication.rst>`_
-`p-Werte <p-value.rst>`_
-`Signifikante Unterschiede <significant-differences.rst>`_
-`Regression <regression.rst>`_
-`Freiheitsgrade <freedom.rst>`_
-`Fehler <mistakes.rst>`_
-`Verstecken <hiding.rst>`_
-`Resultate <results.rst>`_
-`Was kommt als nächstes? <what-next.rst>`_
-`Schlusswort <conclusion.rst>`_
-
-
+`ZUM INHALTSVERZEICHNIS <index.rst>`_
 
 Beitragen
 ~~~~~~~~~
