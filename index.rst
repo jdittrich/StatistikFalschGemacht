@@ -16,7 +16,7 @@ Inhalt
 ------
 
 * `Einleitung <introduction.rst>`_
-* `Datenanalyse <data-analysis.rst>_
+* `Datenanalyse <data-analysis.rst>`_
 * `Teststärke <power.rst>`_
 * `Pseudoreplikation <pseudoreplication.rst>`_
 * `p-Werte <p-value.rst>`_
