@@ -203,16 +203,16 @@ studies cost lives.
 
 .. [Tsang2009iw] Tsang, Ruth, Lindsey Colley, and Larry D. Lynd. "Inadequate statistical power to detect clinically significant differences in adverse event rates in randomized controlled trials." Journal of clinical epidemiology 62.6 (2009): 609-616.
 
-..[Moher1994] Moher, David, Corinne S. Dulberg, and George A. Wells. "Statistical power, sample size, and their reporting in randomized controlled trials." Jama 272.2 (1994): 122-124.
+.. [Moher1994] Moher, David, Corinne S. Dulberg, and George A. Wells. "Statistical power, sample size, and their reporting in randomized controlled trials." Jama 272.2 (1994): 122-124.
 
-..[Bedard2007dy] Bedard, Philippe L., et al. "Statistical power of negative randomized controlled trials presented at American Society for Clinical Oncology annual meetings." Journal of Clinical Oncology 25.23 (2007): 3482-3487.
+.. [Bedard2007dy] Bedard, Philippe L., et al. "Statistical power of negative randomized controlled trials presented at American Society for Clinical Oncology annual meetings." Journal of Clinical Oncology 25.23 (2007): 3482-3487.
 
-..[Brown1987uu] Brown, Charles G., et al. "The beta error and sample size determination in clinical trials in emergency medicine." Annals of emergency medicine 16.2 (1987): 183-187.
+.. [Brown1987uu] Brown, Charles G., et al. "The beta error and sample size determination in clinical trials in emergency medicine." Annals of emergency medicine 16.2 (1987): 183-187.
 
-..[Chung1998ku] Chung, Kevin C., Loree K. Kalliainen, and Rodney A. Hayward. "Type II (β) errors in the hand literature: The importance of power." The Journal of hand surgery 23.1 (1998): 20-25.
+.. [Chung1998ku] Chung, Kevin C., Loree K. Kalliainen, and Rodney A. Hayward. "Type II (β) errors in the hand literature: The importance of power." The Journal of hand surgery 23.1 (1998): 20-25.
 
-..[Button2013dz] Button, Katherine S., et al. "Power failure: why small sample size undermines the reliability of neuroscience." Nature Reviews Neuroscience 14.5 (2013): 365-376.
+.. [Button2013dz] Button, Katherine S., et al. "Power failure: why small sample size undermines the reliability of neuroscience." Nature Reviews Neuroscience 14.5 (2013): 365-376.
 
-..[Hauer2004fz] Hauer, Ezra. "The harm done by tests of significance." Accident Analysis & Prevention 36.3 (2004): 495-500.
+.. [Hauer2004fz] Hauer, Ezra. "The harm done by tests of significance." Accident Analysis & Prevention 36.3 (2004): 495-500.
 
-..[Preusser1982gp] Preusser, David F., et al. "The effect of right-turn-on-red on pedestrian and bicyclist accidents." Journal of safety research 13.2 (1982): 45-55.
+.. [Preusser1982gp] Preusser, David F., et al. "The effect of right-turn-on-red on pedestrian and bicyclist accidents." Journal of safety research 13.2 (1982): 45-55.
