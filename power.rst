@@ -27,7 +27,9 @@ Es ist nicht möglich den Beweis zu erbringen indem man eine Münze 100-mal wirf
 
 .. You can't just flip the coin a hundred times and count the heads. Even with a perfectly fair coin, you don't always get fifty heads:
 
-.. figure:: /plots/binomial.*
+.. figure:: /plots/binomial.png
+
+.. .. figure:: /plots/binomial.*
 
   Das zeigt die Wahrscheinlichkeit für verschiedene Anzahlen von »Kopf« wenn du eine Münze hundertmal wirfst.
 
@@ -49,7 +51,9 @@ Also, was passiert, wenn ich die fragliche Münze zehm mal werfer und diese Krit
 
 .. index:: power curve, power; coin flip
 
-.. figure:: /plots/power-curve-10.*
+.. figure:: /plots/power-curve-10.png
+
+.. .. figure:: /plots/power-curve-10.*
 
 Diese Grafik ist die Kurve einer eine Teststärken-Funktion. Auf der horizontalen Achse steht die verschiedenen Möglichkeiten für die wirkliche Wahrscheinlichkeit, mit der die Münze auf »Kopf« fällt - also wie fair oder unfair die Münze wirklich ist. Auf der vertikalen Achse steht die Wahrscheinlichkeit, mit der der ich aufgrund des errechneten p-Wertes beschließe, dass die Münze manipuliert ist.
 
@@ -68,17 +72,21 @@ Aber was ist, wenn ich die Münze 100 mal werfe?
 
 .. But what if I flip the coin 100 times?
 
-.. figure:: plots/power-curve-100.*
+.. figure:: plots/power-curve-100.png
+
+.. .. figure:: plots/power-curve-100.*
 
 Oder 1000 mal?
 
 .. Or 1,000 times?
 
-.. figure:: plots/power-curve-1000.*
+.. figure:: plots/power-curve-1000.png
+.. .. figure:: plots/power-curve-1000.*
 
 Mit 1000 Würfen kann ich ohne Probleme feststellen ob die Münze manipuliert ist um in 60% der Fälle »Kopf« zu zeigen oder nicht. Es ist einfach überaus unwahrscheinlich das eine faire Münze bei 1000 Würfen mehr als 600 mal »Kopf« zeigen würde.
 
 .. With one thousand flips, I can easily tell if the coin is rigged to give heads 60% of the time. It's just overwhelmingly unlikely that I could flip a fair coin 1,000 times and get more than 600 heads.
+
 .. _power-underpowered:
 
 .. The power of being underpowered
@@ -103,74 +111,108 @@ Natürlich hast du dann nicht besonders viel Daten um Nebenwirkungen zu vergleic
 
 .. Obviously, you won't have terribly much data to compare side effect rates. If four people have serious side effects in one group, and three in the other, you can't tell if that's the medication's fault.
 
-Unglücklicherweise schließen viele Versuche mit »Es gab keinen statistisch signifikanten Unterschied zwischen den Gruppen in Bezug auf unerwünschte Effekte« ohne anzumerken, dass, die Daten unzureichend waren um irgendetwas zu erkennen außer den größten Unterschieden \ :cite:p:`Tsang:2009iw. Das führt dazu, dass Ärzte denken, dass die Medikamente gleich sicher sind, obwohl eines viel gefährlicher als das andere ist.
+Unglücklicherweise schließen viele Versuche mit »Es gab keinen statistisch signifikanten Unterschied zwischen den Gruppen in Bezug auf unerwünschte Effekte« ohne anzumerken, dass, die Daten unzureichend waren um irgendetwas zu erkennen außer den größten Unterschieden [Tsang2009iw]_. Das führt dazu, dass Ärzte denken, dass die Medikamente gleich sicher sind, obwohl eines viel gefährlicher als das andere ist.
 
 .. TODO \ :cite:p:`Tsang:2009iw`
 
 .. Unfortunately, many trials conclude with "There was no statistically significant difference in adverse effects between groups" without  noting that there was insufficient data to detect any but the largest differences.\ :cite:p:`Tsang:2009iw` And so doctors erroneously think the medications are equally safe, when one could well be much more dangerous than the other.
 
-Vielleicht denkst du, dass das nur ein Problem ist, wenn ein Medikament nur einen schwachen Effekt hat. Leider nein: In einer Sichprobe von Studien, die zwischen 1975 und 1990 in renomierten  medizinischen Journals veröffentlicht wurden, ergaben 27% der `randomisierten kontrollierten Studien <http://de.wikipedia.org/wiki/Randomisierte_kontrollierte_Studie>`__
-gegative Ergebnisse, aber 64% dieser Studien hatten nicht genug Daten  gesammelt, um 50% Unterschied zwischen den Gruppen im Experiment zu erkennen. Fünfzig Prozent! Sogar wenn eine Medizin die Symptome um 50% stärker verringert als die andere Medizin ist die Menge an Daten umzureichend um zu schlie0en das diese Effektiver ist. Und 84% der Studien mit negativen Ergebnissen hatten nicht genug Teststärke um einen Unterschied von 35% zu erkennen. \
-:cite:p:`Moher:1994,Bedard:2007dy,Brown:1987uu,Chung:1998ku
+Vielleicht denkst du, dass das nur ein Problem ist, wenn ein Medikament nur einen schwachen Effekt hat. Leider nein: In einer Stichprobe von Studien, die zwischen 1975 und 1990 in renomierten  medizinischen Journals veröffentlicht wurden, ergaben 27% der `randomisierten kontrollierten Studien <http://de.wikipedia.org/wiki/Randomisierte_kontrollierte_Studie>`_
+negative Ergebnisse, aber 64% dieser Studien hatten nicht genug Daten gesammelt, um 50% Unterschied zwischen den Gruppen im Experiment zu erkennen. Fünfzig Prozent! Sogar wenn eine Medizin die Symptome um 50% stärker verringert als die andere Medizin ist die Menge an Daten umzureichend um zu schlie0en das diese Effektiver ist. Und 84% der Studien mit negativen Ergebnissen hatten nicht genug Teststärke um einen Unterschied von 35% zu erkennen [Moher1994]_ [Bedard2007dy]_ [Brown1987uu]_ [Chung1998ku]_.
 
 .. TODO: What is "primary outcome"?
 .. TODO: is »Studien mit negativen Ergebnissen« the right translation for "negative trails"
 .. TODO: \
-:cite:p:`Moher:1994,Bedard:2007dy,Brown:1987uu,Chung:1998ku`
+.. TODO:cite:p:`Moher:1994,Bedard:2007dy,Brown:1987uu,Chung:1998ku`
 
 
 .. You might think this is only a problem when the medication only has a weak effect. But no: in one sample of studies published between 1975 and 1990 in prestigious medical journals, 27% of randomized controlled trials gave negative results, but 64% of these didn't collect enough data to detect a 50% difference in *primary outcome* between treatment groups. Fifty percent! Even if one medication decreases symptoms by 50% more than the other medication, there's insufficient data to conclude it's more effective. And 84% of the negative trials didn't have the power to detect a 25% difference.\ :cite:p:`Moher:1994,Bedard:2007dy,Brown:1987uu,Chung:1998ku`
 
-In den Neurowissenschaften ist das Problem noch größer. Angenommen, wir sammeln die Daten, die in vielen neurowissenschaftlichen Veröffentlichungen zu einem bestimmten Effekt gesammelt wurden und errechen eine gute Abschätzung der Effektgröße. Die Studien haben Durchschnittlich (im Median) eine Chance von 20% den Effekt zu entdecken. Nur nachdem viele Studien zusammengenommen wurden, kann der Effekt erkannt werden. Ähnliche Probleme gibt es in neurowissenschaftlichen Studien, die Tiermodelle nutzen. Das wirft ethische Bedenken auf: Wenn die einzelnen Studien eine geringe Teststärke haben, wir der Effekt wahrscheinlich nur erkannt werden, nachdem viele Studien mit vielen Tieren durchgeführt und analysiert wurden. Dafür werden wesentlich mehr Tiere genutzt als bei der Durchführung einer einmaligen Studie mit ausreichender Teststärke. \ :cite:p:`Button:2013dz
+In den Neurowissenschaften ist das Problem noch größer. Angenommen, wir sammeln die Daten, die in vielen neurowissenschaftlichen Veröffentlichungen zu einem bestimmten Effekt gesammelt wurden und errechen eine gute Abschätzung der Effektgröße. Die Studien haben Durchschnittlich (im Median) eine Chance von 20% den Effekt zu entdecken. Nur nachdem viele Studien zusammengenommen wurden, kann der Effekt erkannt werden. Ähnliche Probleme gibt es in neurowissenschaftlichen Studien, die Tiermodelle nutzen. Das wirft ethische Bedenken auf: Wenn die einzelnen Studien eine geringe Teststärke haben, wir der Effekt wahrscheinlich nur erkannt werden, nachdem viele Studien mit vielen Tieren durchgeführt und analysiert wurden. Dafür werden wesentlich mehr Tiere genutzt als bei der Durchführung einer einmaligen Studie mit ausreichender Teststärke [Button2013dz]_ .
 
 .. TODO war :cite:p:`Button:2013dz`
 
 .. TODO: strong estimate: gute Schätzung?
 
-.. In neuroscience the problem is even worse. Suppose we aggregate the data collected by numerous neuroscience papers investigating one particular effect and arrive at a strong estimate of the effect's size. The median study has only a 20% chance of being able to detect that effect. Only after many studies were aggregated could the effect be discerned. Similar problems arise in neuroscience studies using animal models -- which raises a significant ethical concern. If each individual study is underpowered, the true effect will only likely be discovered after many studies using many animals have been completed and analyzed, using far more animal subjects than if the study had been done properly the first time.\ :cite:p:`Button:2013dz`
+.. In neuroscience the problem is even worse. Suppose we aggregate the data
+collected by numerous neuroscience papers investigating one particular effect
+and arrive at a strong estimate of the effect's size. The median study has only
+a 20% chance of being able to detect that effect. Only after many studies were
+aggregated could the effect be discerned. Similar problems arise in neuroscience
+studies using animal models -- which raises a significant ethical concern. If
+each individual study is underpowered, the true effect will only likely be
+discovered after many studies using many animals have been completed and
+analyzed, using far more animal subjects than if the study had been done
+properly the first time.\ :cite:p:`Button:2013dz`
 
-That's not to say scientists are lying when they state they detected no
+
+Wenn Wissenschaftler sagen, dass sie keinen siginifikanten Unterschied zwischen der Gruppen endeckt haben, lügen sie nicht. Aber du führst dich selbst in die Irre, wenn du annimmst, das das immer bedeutet, dass es keinen *echten* Unterschied gibt: Vielleicht gibt es einen, aber die Studie war zu klein um diesen zu erkennen.
+
+.. That's not to say scientists are lying when they state they detected no
 significant difference between groups. You're just misleading yourself when you
 assume this means there is no *real* difference. There may be a difference, but
 the study was too small to notice it.
 
-Let's consider an example we see every day.
+Nehmen wir ein Beispiel, dass wir aus dem Apptag kennen
+
+.. Let's consider an example we see every day.
 
 .. index:: right turn on red, power; right turn on red
 
 .. _rtor:
 
-The wrong turn on red
+bei rot falsch abgebogen
+------------------------
+
+.. The wrong turn on red
 ---------------------
 
-In the 1970s, many parts of the United States began to allow drivers to turn
-right at a red light. For many years prior, road designers and civil engineers
-argued that allowing right turns on a red light would be a safety hazard,
-causing many additional crashes and pedestrian deaths. But the 1973 oil crisis
-and its fallout spurred politicians to consider allowing right turn on red to
-save fuel wasted by commuters waiting at red lights.
+In den 70er Jahren war es in vielen Teilen der USA erlaubt, an einer roten Ampel rechts abzubiegen. Viele Jahre hatten Ingenieure davon abgeraten: Bei rot rechts abzubiegen sei ein Sicherheitsrisiko, dass viele Unfälle und den Tod von Fußgägnern verursachen würde. Aber die Ölkriese 1973 regte Politiker dazu an, das Rechtsabbiegen bei rot zu erlauben, damit kein Benzin beim Warten an roten Ampeln verschwendet würde.
 
-Several studies were conducted to consider the safety impact of the change. For
-example, a consultant for the Virginia Department of Highways and Transportation
-conducted a before-and-after study of twenty intersections which began to allow
-right turns on red. Before the change there were 308 accidents at the
-intersections; after, there were 337 in a similar length of time. However, this
-difference was not statistically significant, and so the consultant concluded
-there was no safety impact.
+.. In the 1970s, many parts of the United States began to allow drivers to turn right at a red light. For many years prior, road designers and civil engineers argued that allowing right turns on a red light would be a safety hazard, causing many additional crashes and pedestrian deaths. But the 1973 oil crisis and its fallout spurred politicians to consider allowing right turn on red to save fuel wasted by commuters waiting at red lights.
 
-Several subsequent studies had similar findings: small increases in the number
+Mehrere Studien wurden durchgeführt um den Einfluss der Änderung auf die Sicherheit zu untersuchen. Zum Beispiel hat ein Berater des *Virginia Department of Highways and Transportation* eine vorher-nachher Studie von zwanzig Kreuzungen durchgeführt, an denen rechts abbiegen bei rot erlaubt wurde. Vor der Änderung der Vorschrift gab es 308 Unfälle an den Kreuzungen. Danach gab es 337 Unfälle in vergleichbarer Zeit. Aber das der Unterschied nicht dignifikant war, beschloss er Berater, dass es kein Sicherheitsrisiko gäbe.
+
+.. Several studies were conducted to consider the safety impact of the change. For example, a consultant for the Virginia Department of Highways and Transportation conducted a before-and-after study of twenty intersections which began to allow right turns on red. Before the change there were 308 accidents at the intersections; after, there were 337 in a similar length of time. However, this difference was not statistically significant, and so the consultant concluded there was no safety impact.
+
+Folgestudien hatten ähnliche Ergebnisse: Es gab kleine Erhöhungen in der Anzahl der Unfälle, aber es gab nicht genug Daten, um zu schließen, dass die Erhöhung siginifikant sei. Eine Bericht sagte:
+
+.. Several subsequent studies had similar findings: small increases in the number
 of crashes, but not enough data to conclude these increases were significant. As
 one report concluded,
 
-   There is no reason to suspect that pedestrian accidents involving RT
-   operations (right turns) have increased after the adoption of [right turn on
-   red]...
+   Es gibt keinen Grund anzunehmen, dass Unfälle mit Fußgägnern beim Rechtsabbiegen zugenommen haben, nachdem [Rechtsabbiegen bei rot] erlaubt wurde
+
+.. There is no reason to suspect that pedestrian accidents involving RT    operations (right turns) have increased after the adoption of [right turn on    red]...
+
+Basierend auf diesen Daten haben mehr Städte und Bundesstaaten das Rechtsabbiegen bei rot erlaubt. Das Problem war natürlich, dass diese Studien zuwenig Teststärke hatten. Es gab mehr Unfälle mit Fußgängern und anderen Autos, aber niemand sammelte genug Daten, um dies nachweisen zu können, bis Jahre später Studien veröffentlich wurden, die klar zeigten, dass dass es signifikant mehr Unfälle gab (manchmal bis zu 100% mehr).
 
 Based on this data, more cities and states began to allow right turns at red
 lights. The problem, of course, is that these studies were underpowered. More
 pedestrians were being run over and more cars were involved in collisions, but
 nobody collected enough data to show this conclusively until several years
 later, when studies arrived clearly showing the results: significant increases
-in collisions and pedestrian accidents (sometimes up to 100% increases).\
-:cite:p:`Hauer:2004fz,Preusser:1982gp` The misinterpretation of underpowered
+in collisions and pedestrian accidents (sometimes up to 100% increases). [Hauer2004fz]_ [Preusser1982gp]_\
+
+Die Misinterpretation von Studien mit geringer Teststärke kostet Leben.
+
+..  The misinterpretation of underpowered
 studies cost lives.
+
+.. :cite:p:`Hauer:2004fz,Preusser:1982gp`
+
+.. [Tsang2009iw] Tsang, Ruth, Lindsey Colley, and Larry D. Lynd. "Inadequate statistical power to detect clinically significant differences in adverse event rates in randomized controlled trials." Journal of clinical epidemiology 62.6 (2009): 609-616.
+
+..[Moher1994] Moher, David, Corinne S. Dulberg, and George A. Wells. "Statistical power, sample size, and their reporting in randomized controlled trials." Jama 272.2 (1994): 122-124.
+
+..[Bedard2007dy] Bedard, Philippe L., et al. "Statistical power of negative randomized controlled trials presented at American Society for Clinical Oncology annual meetings." Journal of Clinical Oncology 25.23 (2007): 3482-3487.
+
+..[Brown1987uu] Brown, Charles G., et al. "The beta error and sample size determination in clinical trials in emergency medicine." Annals of emergency medicine 16.2 (1987): 183-187.
+
+..[Chung1998ku] Chung, Kevin C., Loree K. Kalliainen, and Rodney A. Hayward. "Type II (β) errors in the hand literature: The importance of power." The Journal of hand surgery 23.1 (1998): 20-25.
+
+..[Button2013dz] Button, Katherine S., et al. "Power failure: why small sample size undermines the reliability of neuroscience." Nature Reviews Neuroscience 14.5 (2013): 365-376.
+
+..[Hauer2004fz] Hauer, Ezra. "The harm done by tests of significance." Accident Analysis & Prevention 36.3 (2004): 495-500.
+
+..[Preusser1982gp] Preusser, David F., et al. "The effect of right-turn-on-red on pedestrian and bicyclist accidents." Journal of safety research 13.2 (1982): 45-55.
