@@ -1,14 +1,22 @@
 .. index:: pseudoreplication
 
+.. ******************************************
+.. Pseudoreplication: choose your data wisely
+.. ******************************************
+
 ******************************************
-Pseudoreplication: choose your data wisely
+Pseudoreplikation: Wähle deine Daten weise
 ******************************************
 
-Many studies strive to collect more data through replication: by repeating their
+Viele Studien streben an mehr Daten durch Replikation zu sammeln. Indem sie ihre Messungen mit zusätzlichen Patienten oder Stichproben wiederholen, können sie sich sicherer sein, dass ihre Zahlen stimmen und das kleine Unterschiede entdeckt werden, die auf den ersten Blick nicht sichtbar sind. Wir haben gesehen, wie wertvoll mehr Daten für das Erhöhen der Teststärke und das Entdecken kleiner Unterschiede ist. Aber was genau zählt als  »Replikation«?
+
+.. Many studies strive to collect more data through replication: by repeating their
 measurements with additional patients or samples, they can be more certain of
 their numbers and discover subtle relationships that aren't obvious at first
 glance. We've seen the value of additional data for improving statistical power
 and detecting small differences. But what exactly counts as a replication?
+.. TODO: mi "mehr Daten durch Replikation zu sammeln" mit/durch/für?
+.. TODO: Was genau zählt... : nicht verbunden mit vorhergehendem Satz (?) 
 
 Let's return to a medical example. I have two groups of 100 patients taking
 different medications, and I seek to establish which medication lowers blood
