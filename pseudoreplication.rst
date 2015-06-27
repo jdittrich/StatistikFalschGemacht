@@ -40,8 +40,7 @@ Es gibt mehrere Wege diese Abhängigkeiten in Betracht zu ziehen:
 #. Analysiere jeden abhängigen Datenpunkt seperat: Du könnstest einen Analyse des Blutdrucks jedes Patienten am 5. Tag durchführen (sofern es nur eine Messung an dem Tag gab). Aber Vorsicht: Wenn du das für jeden Tag machstm bekommst du Probleme mit :ref:`Mehrfachvergleichen <multiple-comparisons>`, die wir im nächsten Kapitel diskutieren.
 #. Nutze ein statistisches Modell, das die Abhängigkeiten berücksichtigt, wie ein hierarchisches Modell oder ein Zufallseffekt-Modell.
 
-.. In statistical terms, pseudoreplication occurs when individual observations are heavily dependent on each other. Your measurement of a patient's blood pressure will be highly related to his blood pressure yesterday, and your measurement of soil composition here will be highly correlated with your measurement five feet away. There are several ways to account for thisdependence while performing
-your statistical analysis:
+.. In statistical terms, pseudoreplication occurs when individual observations are heavily dependent on each other. Your measurement of a patient's blood pressure will be highly related to his blood pressure yesterday, and your measurement of soil composition here will be highly correlated with your measurement five feet away. There are several ways to account for thisdependence while performing your statistical analysis:
 
 .. #. Average the dependent data points. For example, average all the blood    pressure measurements taken from a single person. This isn't perfect, though;    if you measured some patients more frequently than others, thiswon't be    reflected in the averaged number. You want a method that  somehow counts    measurements as more reliable as more are taken.
 
