@@ -1,21 +1,28 @@
 .. index:: p value; base rate fallacy
 
-***************************************
-The *p* value and the base rate fallacy
-***************************************
 
-You've already seen that *p* values are hard to interpret. Getting a
-statistically insignificant result doesn't mean there's no difference. What
-about getting a significant result?
 
-Let's try an example. Suppose I am testing a hundred potential cancer
-medications. Only ten of these drugs actually work, but I don't know which; I
-must perform experiments to find them. In these experiments, I'll look for
-:math:`p<0.05` gains over a placebo, demonstrating that the drug has a
-significant benefit.
+**************************************
+p-Werte und Prävalenzfehler
+**************************************
 
-To illustrate, each square in this grid represents one drug. The blue squares
-are the drugs that work:
+.. ***************************************
+.. The *p* value and the base rate fallacy
+.. ***************************************
+
+Du hast schon gesehen, das *p*-Werte schwierig zu interpretieren sind. Ein statistisch nicht signifikanter Unterschied (der *p*-Wert ist also über ddeiner gewählten Signifikanzschwelle) bedeutet nicht, dass es keinen Unterschied gäbe. Aber wie sieht es aus, wenn ich tatsächlich  einen statistisch signifikanten Unterschied habe?
+
+
+
+.. You've already seen that *p* values are hard to interpret. Getting a statistically insignificant result doesn't mean there's no difference. What about getting a significant result?
+
+Probieren wir es am Beispiel aus. Stellt dir vor, ich teste einhundert mögliche Medikamente gegen Krebs. Nur zehn der Medikamente wirken, aber ich weiß nicht welche. Ich muss Experimente durchführen um herrauszufinden welche Medikamente wirken. In diesen Experimenten teste ich auf einen auf dem Niveau von :math:`p<0.05` signifikanten Vorteil gegenüber einem Placebo.
+
+.. Let's try an example. Suppose I am testing a hundred potential cancermedications. Only ten of these drugs actually work, but I don't know which; I must perform experiments to find them. In these experiments, I'll look for :math:`p<0.05` gains over a placebo, demonstrating that the drug has  a significant benefit.
+
+Zur Demonstration habe ich das Problem visualisiert: Jedes Quadrat in dem Gitter repräsentiert eine Substanz, die vielleicht ein hilfreicher Wirkstoff ist. Die Blauen Quadrate sind Substanzen, die tatsächlich als Wiorkstoff in einem Medikament funktionieren würden.
+
+.. To illustrate, each square in this grid represents one drug. The blue squares are the drugs that work:
 
 .. only:: html or text
 
@@ -26,9 +33,9 @@ are the drugs that work:
    .. figure:: /plots/drug-grids-1.*
       :scale: 50%
 
-As we saw, most trials can't perfectly detect every good medication. We'll
-assume my tests have a statistical power of 0.8. Of the ten good drugs, I will
-correctly detect around eight of them, shown in purple:
+Wie wir gesehen haben können die meisten Versuche nicht jeden funktionierenden Wirkstoff erkennen. Wir werden annehmen, dass mein Test eine Teststärke von 0,8 hat. Von 10 funktionierenden Wirkstoffen werde ich durchschnittlich 8 korrekt erkennen. Diese sind in Violett dargestellt.
+
+.. As we saw, most trials can't perfectly detect every good medication. We'll assume my tests have a statistical power of 0.8. Of the ten good drugs, I will correctly detect around eight of them, shown in purple:
 
 .. only:: html or text
 
@@ -39,12 +46,13 @@ correctly detect around eight of them, shown in purple:
    .. figure:: /plots/drug-grids-2.*
       :scale: 50%
 
-Of the ninety ineffectual drugs, I will conclude that about 5 have significant
-effects. Why? Remember that *p* values are calculated under the assumption of no
-effect, so :math:`p = 0.05` means a 5% chance of falsely concluding that an
-ineffectual drug works.
+Bei 90 Substanzen, die keine Wirkungen haben werde ich annehmen das 5 davon eine signifikante Wirkung haben. Warum? Erinnere dich dran das p-Werte unter der Annahme berrechnet werden, dass es keinen Effekt gibt, also :math:`p = 0.05`bedeutet, dass es eine fünfprozentige Wahrscheinlichkeit gibt, dass fälschlicherweise angenommen wird, dass eine unwirksamer wirkstoff wirkt.
 
-So I perform my experiments and conclude there are 13 working drugs: 8 good
+.. Of the ninety ineffectual drugs, I will conclude that about 5 have significant effects. Why? Remember that *p* values are calculated under the assumption of no effect, so :math:`p = 0.05` means a 5% chance of falsely concluding that an ineffectual drug works.
+
+Also führe ich meine Experimente durch und schließe, dass es 13 funktionierende Wirkstoffe gibt: 8 die wirklich funktionieren und 5 bei denen ich irrtümlich annehme das sie funktionieren. Diese sind in rot gezeigt:
+
+.. So I perform my experiments and conclude there are 13 working drugs: 8 good
 drugs and 5 I've included erroneously, shown in red:
 
 .. only:: html or text
@@ -56,78 +64,81 @@ drugs and 5 I've included erroneously, shown in red:
    .. figure:: /plots/drug-grids-3.*
       :scale: 50%
 
-The chance of any given "working" drug being truly effectual is only 62%. If I
-were to randomly select a drug out of the lot of 100, run it through my tests,
-and discover a :math:`p < 0.05` statistically significant benefit, there is only
-a 62% chance that the drug is actually effective. In statistical terms, my false
-discovery rate -- the fraction of statistically significant results which are
-really false positives -- is 38%.
+Die Wahrscheinlichkeit dass ein – laut der Auswertung – funktionierender Wirkstoff wirklich funktioniert ist nur 62%. Das heißt: Wenn ich aus all den 100 Wirkstoffen einen auswählt, diesen Teste und eine auf dem Niveau :math:`p < 0.05` statistisch signifikanten Unterschied finde besteht nur eine 62%-ige Chance, dass der Wirkstoff tatsächlich funktioniert. Der Anteil von statistisch signifikanten Resultaten die in Wirklichkeit fälschlicherweise als funktionierende Wirkstoffe klassifiziert werden, die »False Discovery Rate«, ist 38%.
 
-Because the *base rate* of effective cancer drugs is so low -- only 10% of our
-hundred trial drugs actually work -- most of the tested drugs do not work, and
-we have many opportunities for false positives. If I had the bad fortune of
-possessing a truckload of completely ineffective medicines, giving a base rate
-of 0%, there is a 0% chance that any statistically significant result is
-true. Nevertheless, I will get a :math:`p < 0.05` result for 5% of the drugs in
-the truck.
+.. The chance of any given "working" drug being truly effectual is only 62%. If I were to randomly select a drug out of the lot of 100, run it through my tests, and discover a :math:`p < 0.05` statistically significant benefit, there is only a 62% chance that the drug is actually effective. In statistical terms, my false discovery rate -- the fraction of statistically significant results which are really false positives -- is 38%.
+
+Weil die Basisrate der funktionierenden Krebsmedikamente so niedrig ist – nur 10% von unseren hundert zu testenden Wirkstoffen funktionieren wirklich – gibt es viele Möglichkeiten, dass es fälschlich positive Testergebnisse gibt. Wenn ich unglücklicherweise eine Wagenladung nicht funktionierender Wirksoffe habe und alle teste, habe ich eine 0%-ige Chance, dass irgendein statistisch signifikantes Ergebnis wirklich zutrifft. Trotzdem werde ich ein :math:`p < 0.05` Ergebnis für 5% aller dieser unwirksamen Wirkstoffe in der Wagenladung haben.
+
+.. Because the *base rate* of effective cancer drugs is so low -- only 10% of our hundred trial drugs actually work -- most of the tested drugs do not work, and we have many opportunities for false positives. If I had the bad fortune of possessing a truckload of completely ineffective medicines, giving a base rate of 0%, there is a 0% chance that any statistically significant result is true. Nevertheless, I will get a :math:`p < 0.05` result for 5% of the drugs in the truck.
 
 .. index:: base rate fallacy
 
-You often hear people quoting *p* values as a sign that error is
-unlikely. "There's only a 1 in 10,000 chance this result arose as a statistical
-fluke," they say, because they got :math:`p = 0.0001`. No! This ignores the base
-rate, and is called the *base rate fallacy*. Remember how *p* values are defined:
+Oft zitieren Menschen p-Werte als ein Zeichen, dass ein Fehler unwahrscheinlich ist: »Es gibt nur eine Wahrscheinlichkeit von 1 zu 10.000 dass diese Ergebnis statistisch falsch ist«, sagen sie weil sie ein Ergebnis von :math:`p = 0.0001` haben. Falsch! Das ignoriert die Basisrate und nennt sich »Prävalenzfehler« oder »Basisratenfehler«. Erinnere dich, wie p-werte definiert sind:
 
-  The P value is defined as the probability, under the assumption of no effect
-  or no difference (the null hypothesis), of obtaining a result equal to or more
-  extreme than what was actually observed.
+  Der p-Wert ist definiert als die Wahrscheinlichkeit, ein Ergebnis mindestens so extrem wie das gemessene zu messen, wenn es eigentlich garkeinen Effekt (= Unterschied) gibt (diese Annahme heißt »Nullhypothese«).
 
-A *p* value is calculated under the assumption that the medication *does not
-work* and tells us the probability of obtaining the data we did, or data more
-extreme than it. It does *not* tell us the chance the medication is effective.
+.. You often hear people quoting *p* values as a sign that error is unlikely. "There's only a 1 in 10,000 chance this result arose as a statistical fluke," they say, because they got :math:`p = 0.0001`. No! This ignores the base rate, and is called the *base rate fallacy*. Remember how *p* values are defined:
 
-When someone uses their *p* values to say they're probably right, remember
+.. The P value is defined as the probability, under the assumption of no effect   or no difference (the null hypothesis), of obtaining a result equal to or more   extreme than what was actually observed.
+
+Der p-Wert wird berechnet unter der Annahmen, dass der Wirkstoff *nicht wirkt* und sagt und sie Wahrscheinlichkeit unter dieser Annahme solche Werte wie wir zu bekommen oder extremere Werte. Der p-Wert sagt uns *nicht* wie groß die Wahrscheinlichkeit ist das der Wirkstoff tatsächlich funkioniert.
+
+.. A *p* value is calculated under the assumption that the medication *does not work* and tells us the probability of obtaining the data we did, or data more extreme than it. It does *not* tell us the chance the medication is effective.
+
+Erinnere dich daran, wenn menschen mit p-Werten begründen, dass sie wahrscheinlich Recht haben. die Irrtumswahrscheinlichkeit ihrer Untersuchung ist fast sicher höher. In Bereichen, in deinen die meisten getesteten Hypothesen falsch sind, wie z.B. in der Frühphase von Medikamentenversuchen (die wenigsten Wirkstoffe nehmen diese Hürde), ist es  wahrscheinlich, dass die *meisten* »statistisch signifikanten« Ergebnisse mit :math:`p < 0.05` in Wirklichkeit falsch sind.
+
+.. When someone uses their *p* values to say they're probably right, remember
 this. Their study's probability of error is almost certainly much higher. In
 fields where most tested hypotheses are false, like early drug trials (most
 early drugs don't make it through trials), it's likely that *most*
 "statistically significant" results with :math:`p < 0.05` are actually flukes.
 
-One good example is medical diagnostic tests.
+.. One good example is medical diagnostic tests. ..ausgelassen wh. von oben
 
 .. index:: base rate fallacy; mammograms, mammograms
 
-The base rate fallacy in medical testing
-----------------------------------------
+.. The base rate fallacy in medical testing
+.. ----------------------------------------
 
-There has been some controversy over the use of mammograms in screening breast
-cancer. Some argue that the dangers of false positive results, such as
-unnecessary biopsies, surgery and chemotherapy, outweigh the benefits of early
-cancer detection. This is a statistical question. Let's evaluate it.
 
-Suppose 0.8% of women who get mammograms have breast cancer. In 90% of women
-with breast cancer, the mammogram will correctly detect it. (That's the
-statistical power of the test. This is an estimate, since it's hard to tell how
-many cancers are missed if we don't know they're there.) However, among women
-with no breast cancer at all, about 7% will get a positive reading on the
-mammogram, leading to further tests and biopsies and so on. If you get a
-positive mammogram result, what are the chances you have breast cancer?
+.. TODO: Geht es nicht die ganze Zeit um medizische Tests?
 
-Ignoring the chance that you, the reader, are male,\ [#male]_ the answer is
+Der Basisratenfehler in Medizinischen Tests
+----------------------------------------------
+
+Es gibt einigen Streit um die Nutzung von `Mammographie<https://de.wikipedia.org/wiki/Mammographie>`_. zur Brustgrebserkennung. Einige sagen, dass die Gefahr von falsch-positiven Ergebnissen (eine Person bekommt *fälschlicherweise* die Diagnose ›Brustkrebs‹) wie psychische Belastung, unnötige Biobsien, Operationen und Chemoterapie größer sind als der Nutzen einer früheren Krebserkennung. Das ist auch eine statistische Frage. Lass’ sie uns einschätzen.
+
+
+.. There has been some controversy over the use of mammograms in screening breast cancer. Some argue that the dangers of false positive results, such as unnecessary biopsies, surgery and chemotherapy, outweigh the benefits of early cancer detection. This is a statistical question. Let's evaluate it.
+
+Angenommen, 0.8% aller Frauen die einen Mammographie-Untersuchung machen, sind wirklich an Brustkrebs erkrankt. Bei 90% dieser Frauen wird der Test den Krebs auch wirklich erkennen. (Das ist die Teststärke des Testes. Es ist eine Schätzung, denn es ist schwer zu sagen, wieviele Erkrankungen *nicht erkannt* werden).
+
+Von den Frauen, die in Wirklichkeit nicht an Brustkrebs erkrankt sind, werden 7% ein positives Testresultat bekommen. Das führt zu weiteren Tests und Biobsien. Wenn du ein ein positives Testergebnis bekommts – wie groß ist die Wahscheinlichkeit das du wirklich an Brustkrebs erkrankt bist?
+
+
+.. NOTE: "if we don't know they're there." ausgelassen. Erhöhte Verständnis nicht.
+
+.. Suppose 0.8% of women who get mammograms have breast cancer. In 90% of women with breast cancer, the mammogram will correctly detect it. (That's the statistical power of the test. This is an estimate, since it's hard to tell how many cancers are missed if we don't know they're there.) However, among women with no breast cancer at all, about 7% will get a positive reading on the mammogram, leading to further tests and biopsies and so on. If you get a  positive mammogram result, what are the chances you have breast cancer?
+
+Wenn wir die Möglichkeit ignorieren, dass du, der Leserm männlich bist ,\ [#male]_ ist die Wahrscheinlickeit wirklich an Brustkrebs erkrankt zu sein, wenn du eine positive Diagnose (= Verdacht auf Brustkrebs) bekommts, **9%**. [Kramer:2005in]_
+
+.. Ignoring the chance that you, the reader, are male,\ [#male]_ the answer is
 9%.\ :cite:p:`Kramer:2005in`
 
-Despite the test only giving false positives for 7% of cancer-free women,
-analogous to testing for :math:`p < 0.07`, 91% of positive tests are false
-positives.
+Obwoh der Test nur für 7% der Frauen, die in Wirklichkeit nicht an Brustkrebs erkrankt sind, fälschlicherweise positive Ergebnisse hat – analog zum Testen auf ein Signifikanziveau von :math:`p < 0.07` sind 91% der positiven Testergebnisse fälschlicherweise positiv.
 
-How did I calculate this? It's the same method as the cancer drug
-example. Imagine 1,000 randomly selected women who choose to get
-mammograms. Eight of them (0.8%) have breast cancer. The mammogram correctly
-detects 90% of breast cancer cases, so about seven of the eight women will have
-their cancer discovered. However, there are 992 women without breast cancer, and
-7% will get a false positive reading on their mammograms, giving us 70 women
-incorrectly told they have cancer.
+.. Despite the test only giving false positives for 7% of cancer-free women, analogous to testing for , 91% of positive tests are false positives.
 
-In total, we have 77 women with positive mammograms, 7 of whom actually have
+Wie habe ich das berechnet? Mir der selben Methoden wie in dem Beispiel mit dem Wirkstoff gegen Krebs. Stell dir vor, es unter allen Frauen die eine Mammographie machen wollen 1000 Frauen zufällig ausgewählt. Auch von ihnen (0.8%) sind wirklich an Brustkrebs erkrankt. Die Mammographie findet 90% aller Fälle von wirklich existierendem Brustkrebs – ungefähr sieben von acht frauen, die wirklich Brustkrebs haben, bekommen korrekterweise ein positives Testresultat. Aber es gibt noch 992 Frauen die in Wirklichkeit nicht an Brustkrebs erkrankt sind, und für 7% von ihnen bekommen wir fälschlicherweise ein positives Testergebnis. Das Resultat ist, dass 70 Frauen fälschlicherweise die Diagnose bekommen, an Brustkrebs erkrankt zu sein.
+
+.. How did I calculate this? It's the same method as the cancer drug example. Imagine 1,000 randomly selected women who choose to get mammograms. Eight of them (0.8%) have breast cancer. The mammogram correctly detects 90% of breast cancer cases, so about seven of the eight women will have their cancer discovered. However, there are 992 women without breast cancer, and 7% will get a false positive reading on their mammograms, giving us 70 women incorrectly told they have cancer.
+
+Insgesammt haben wir – in der Stichprobe von 1000 Frauen – 77 Frauen mit einem positiven Befund und 7 Frauen, die wirklich an Brustkrebs erkrankt sind. Nur 9% der Frauen, die einen positiven Befund bekommen,  haben tatsächlich Brustkrebs.
+
+.. TODO: und eine Frau die An Brustkrebs erkrankt ist, aber KEINE positive Diagnose bekommen hat?
+
+.. In total, we have 77 women with positive mammograms, 7 of whom actually have
 breast cancer. Only 9% of women with positive mammograms have breast cancer.
 
 If you administer questions like this one to statistics students and scientific
@@ -373,5 +384,8 @@ Benjamini-Hochberg procedure gives silly results, and it has been mathematically
 shown that it is always possible to beat it in controlling the false discovery
 rate. But it's a start, and it's much better than nothing.
 
+
 .. [#male] Interestingly, being male doesn't exclude you from getting breast
   cancer; it just makes it exceedingly unlikely.
+
+.. [Kramer:2005in] Krämer, Walter, and Gerd Gigerenzer. "How to confuse with statistics or: The use and misuse of conditional probabilities." Statistical Science (2005): 223-230.
