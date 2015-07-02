@@ -12,8 +12,6 @@ p-Werte und Prävalenzfehler
 
 Du hast schon gesehen, das *p*-Werte schwierig zu interpretieren sind. Ein statistisch nicht signifikanter Unterschied (der *p*-Wert ist also über ddeiner gewählten Signifikanzschwelle) bedeutet nicht, dass es keinen Unterschied gäbe. Aber wie sieht es aus, wenn ich tatsächlich  einen statistisch signifikanten Unterschied habe?
 
-
-
 .. You've already seen that *p* values are hard to interpret. Getting a statistically insignificant result doesn't mean there's no difference. What about getting a significant result?
 
 Probieren wir es am Beispiel aus. Stellt dir vor, ich teste einhundert mögliche Medikamente gegen Krebs. Nur zehn der Medikamente wirken, aber ich weiß nicht welche. Ich muss Experimente durchführen um herrauszufinden welche Medikamente wirken. In diesen Experimenten teste ich auf einen auf dem Niveau von :math:`p<0.05` signifikanten Vorteil gegenüber einem Placebo.
@@ -74,7 +72,7 @@ Weil die Basisrate der funktionierenden Krebsmedikamente so niedrig ist – nur 
 
 .. index:: base rate fallacy
 
-Oft zitieren Menschen p-Werte als ein Zeichen, dass ein Fehler unwahrscheinlich ist: »Es gibt nur eine Wahrscheinlichkeit von 1 zu 10.000 dass diese Ergebnis statistisch falsch ist«, sagen sie weil sie ein Ergebnis von :math:`p = 0.0001` haben. Falsch! Das ignoriert die Basisrate und nennt sich »Prävalenzfehler« oder »Basisratenfehler«. Erinnere dich, wie p-werte definiert sind:
+Oft zitieren Menschen p-Werte als ein Zeichen, dass ein Fehler unwahrscheinlich ist: »Es gibt nur eine Wahrscheinlichkeit von 1 zu 10.000 dass diese Ergebnis statistisch falsch ist«, sagen sie weil sie ein Ergebnis von :math:`p = 0.0001` haben. Falsch! Das ignoriert die Basisrate und nennt sich »Prävalenzfehler« oder »Basisratenfehlschluss«. Erinnere dich, wie p-werte definiert sind:
 
   Der p-Wert ist definiert als die Wahrscheinlichkeit, ein Ergebnis mindestens so extrem wie das gemessene zu messen, wenn es eigentlich garkeinen Effekt (= Unterschied) gibt (diese Annahme heißt »Nullhypothese«).
 
@@ -104,7 +102,7 @@ early drugs don't make it through trials), it's likely that *most*
 
 .. TODO: Geht es nicht die ganze Zeit um medizische Tests?
 
-Der Basisratenfehler in Medizinischen Tests
+Der Basisratenfehlschluss in Medizinischen Tests
 ----------------------------------------------
 
 Es gibt einigen Streit um die Nutzung von `Mammographie<https://de.wikipedia.org/wiki/Mammographie>`_. zur Brustgrebserkennung. Einige sagen, dass die Gefahr von falsch-positiven Ergebnissen (eine Person bekommt *fälschlicherweise* die Diagnose ›Brustkrebs‹) wie psychische Belastung, unnötige Biobsien, Operationen und Chemoterapie größer sind als der Nutzen einer früheren Krebserkennung. Das ist auch eine statistische Frage. Lass’ sie uns einschätzen.
@@ -126,55 +124,58 @@ Wenn wir die Möglichkeit ignorieren, dass du, der Leserm männlich bist ,\ [#ma
 .. Ignoring the chance that you, the reader, are male,\ [#male]_ the answer is
 9%.\ :cite:p:`Kramer:2005in`
 
-Obwoh der Test nur für 7% der Frauen, die in Wirklichkeit nicht an Brustkrebs erkrankt sind, fälschlicherweise positive Ergebnisse hat – analog zum Testen auf ein Signifikanziveau von :math:`p < 0.07` sind 91% der positiven Testergebnisse fälschlicherweise positiv.
+Obwoh der Test nur für 7% der Frauen, die in Wirklichkeit nicht an Brustkrebs erkrankt sind, fälschlicherweise positive Ergebnisse hat – analog zum Testen auf ein Signifikanziveau von :math:`p < 0.07` sind 91% der positiven Testergebnisse *fälschlicherweise* positiv.
 
 .. Despite the test only giving false positives for 7% of cancer-free women, analogous to testing for , 91% of positive tests are false positives.
 
-Wie habe ich das berechnet? Mir der selben Methoden wie in dem Beispiel mit dem Wirkstoff gegen Krebs. Stell dir vor, es unter allen Frauen die eine Mammographie machen wollen 1000 Frauen zufällig ausgewählt. Auch von ihnen (0.8%) sind wirklich an Brustkrebs erkrankt. Die Mammographie findet 90% aller Fälle von wirklich existierendem Brustkrebs – ungefähr sieben von acht frauen, die wirklich Brustkrebs haben, bekommen korrekterweise ein positives Testresultat. Aber es gibt noch 992 Frauen die in Wirklichkeit nicht an Brustkrebs erkrankt sind, und für 7% von ihnen bekommen wir fälschlicherweise ein positives Testergebnis. Das Resultat ist, dass 70 Frauen fälschlicherweise die Diagnose bekommen, an Brustkrebs erkrankt zu sein.
+Wie habe ich das berechnet? Mit der selben Methoden wie in dem Beispiel mit dem Wirkstoff gegen Krebs. Stell dir vor, es unter allen Frauen die eine Mammographie machen wollen 1000 Frauen zufällig ausgewählt. Acht von ihnen (0.8%) sind wirklich an Brustkrebs erkrankt. Die Mammographie findet 90% aller Fälle von wirklich existierendem Brustkrebs – ungefähr sieben von acht Frauen, die wirklich Brustkrebs haben, bekommen korrekterweise ein positives Testresultat. Das bedeutet im Umkehrschluss, dass eine wirklich Existierende Erkrankung bei einer Frau *nicht* erkannt wird.  Es gibt 992 Frauen, die in Wirklichkeit nicht an Brustkrebs erkrankt sind, und für 7% von ihnen bekommen wir fälschlicherweise ein positives Testergebnis. Das Resultat ist, dass 70 Frauen fälschlicherweise die Diagnose bekommen, an Brustkrebs erkrankt zu sein.
 
 .. How did I calculate this? It's the same method as the cancer drug example. Imagine 1,000 randomly selected women who choose to get mammograms. Eight of them (0.8%) have breast cancer. The mammogram correctly detects 90% of breast cancer cases, so about seven of the eight women will have their cancer discovered. However, there are 992 women without breast cancer, and 7% will get a false positive reading on their mammograms, giving us 70 women incorrectly told they have cancer.
 
 Insgesammt haben wir – in der Stichprobe von 1000 Frauen – 77 Frauen mit einem positiven Befund und 7 Frauen, die wirklich an Brustkrebs erkrankt sind. Nur 9% der Frauen, die einen positiven Befund bekommen,  haben tatsächlich Brustkrebs.
 
-.. TODO: und eine Frau die An Brustkrebs erkrankt ist, aber KEINE positive Diagnose bekommen hat?
+.. TODO: und eine Frau die An Brustkrebs erkrankt ist, aber KEINE positive Diagnose bekommen hat? -> Ja. TRUE POSITIVES-(TRUE POSITIVES*90%): 8-(8*0,9)=0.8, also etwas weniger als eine.
 
 .. In total, we have 77 women with positive mammograms, 7 of whom actually have
 breast cancer. Only 9% of women with positive mammograms have breast cancer.
 
-If you administer questions like this one to statistics students and scientific
-methodology instructors, more than a third fail.\ :cite:p:`Kramer:2005in` If you
-ask doctors, two thirds fail.\ :cite:p:`Bramwell:2006er` They erroneously
-conclude that a :math:`p < 0.05` result implies a 95% chance that the result is
-true -- but as you can see in these examples, the likelihood of a positive
-result being true depends on *what proportion of hypotheses tested are
-true*. And we are very fortunate that only a small proportion of women have
-breast cancer at any given time.
+Weenn du Fragen wie diese an Statistikstudenten und Lehrende für naturwissenschafltiche Methodik austeilst, fällt ein Drittel von Ihnen durch [Kramer:2005in]_. Wenn du Ärzte fragst, fallen zwei Drittel durch den Test [Bramwell:2006er]_. Sie schlussfolgern fälschlicherweise, dass ein Signifikanzniveau von :math:`p < 0.05` bedeutet, dass das Ergebnis eine 95%-Wahrscheinlichkeit hat wahr zu sein. Aber wie du an den Beispielen sehen kannst, hängt die Wahrscheinlichkeit, dass ein positives Testergebnis mit der Wirklichkeit übereinstimmt, davon ab wie groß der Anteil von Personen ist, auf die die Hypothese zutrifft. Und zum glück hat zu einem bestimmten Zeitpunkt nur ein kleiner Teil aller Frauen Brustkrebs.
 
-Examine introductory statistical textbooks and you will often find the same
+.. If you administer questions like this one to statistics students and scientific methodology instructors, more than a third fail.\ :cite:p:`Kramer:2005in` If you ask doctors, two thirds fail.\ :cite:p:`Bramwell:2006er` They erroneously conclude that a :math:`p < 0.05` result implies a 95% chance that the result is true -- but as you can see in  these examples, the likelihood of a positive result being true depends on *what proportion of hypotheses tested are true*. And we are very fortunate that only a small proportion of women have breast cancer at any given time.
+
+Schau dir Statistiklehrbücher für Einsteiger an: Du wirst oft den selben Fehler finden. *p*-Werte sind kontraintuitiv und Basisratenfehlschlüsse sind überall.
+
+.. Examine introductory statistical textbooks and you will often find the same
 error. *P* values are counterintuitive, and the base rate fallacy is everywhere.
 
 .. index:: base rate fallacy; gun use
 
 .. _base-rate-gun:
 
-Taking up arms against the base rate fallacy
---------------------------------------------
+Greif’ zu den Waffen gegen den Basisratenfehlschluss
+----------------------------------------------------
 
-You don't have to be performing advanced cancer research or early cancer
-screenings to run into the base rate fallacy. What if you're doing social
-research? You'd like to survey Americans to find out how often they use guns in
-self-defense. Gun control arguments, after all, center on the right to
-self-defense, so it's important to determine whether guns are commonly used for
-defense and whether that use outweighs the downsides, such as homicides.
+.. Taking up arms against the base rate fallacy
+.. --------------------------------------------
 
-One way to gather this data would be through a survey. You could ask a
+Du must garnicht erst fortgeschrittene Krebsforschung oder Früherkennungsprogramme durchführen um auf den Basisratenfehlschluss zu stoßen. Wie wäre es mit Sozialforschung? Du könntest US-Amerikaner befragen um herrauszufinden wieoft diese ihre Handfeuerwaffen zur selbstverteidigung einsetzen. Der Streit um die Zugänglichkeit von Waffen fokussiert sich auf das recht zur Selbstverteidigung. Also ist es wichtig festzustellen ob Waffen üblicherweise zur Selbstverteidigung eingesetzt werden und ob das die Nachteile, wie z.B. Morde, aufwiegen kann.
+
+.. You don't have to be performing advanced cancer research or early cancer screenings to run into the base rate fallacy. What if you're doing social research? You'd like to survey Americans to find out how often they use guns in self-defense. Gun control arguments, after all, center on the right to self-defense, so it's important to determine whether guns are commonly used for defense and whether that use outweighs the downsides, such as homicides.
+
+Eine Möglichkeit, solche Daten zu sammeln, wäre eine Umfrage. Du könntest eine repräsentative Stichprobe von US-Amerikanern fragen, ob sie Waffen besitzen, und wenn ja, ob sie diese Waffen schon genutzt haben um ihr Zuhause bei Einbrüchen zu schützen oder sich selber bei einem Überfall zu verteidigen. Du könntest die Zahlen mit Statistiken der Polizei zur Nutzung von Schusswaffen bei Morden vergleichen und so eine bewusste Entscheidung darüber treffen ob die Vorteile die Nachteile überwiegen oder nicht.
+
+.. One way to gather this data would be through a survey. You could ask a
 representative sample of Americans whether they own guns and, if so, whether
 they've used the guns to defend their homes in burglaries or defend themselves
 from being mugged. You could compare these numbers to law enforcement statistics
 of gun use in homicides and make an informed decision about whether the benefits
 outweigh the downsides.
 
-Such surveys have been done, with interesting results. One 1992 telephone survey
+Solche Umfragen wurden schon durchgeführt – mit interessanten Resultaten. Auf Basis einer Telefonumfrage im Jahre 1992 wurde geschätzt das US-Amerikanische Bürger bis zu 2,5 Millionen mal pro Jahr  Waffen zur Selbstverteidigung nutzen. Das bedeutet, 1% aller US-Amerikanischen Erwachsenen haben sich mit Waffen verteidigt. 34% der Ereignisse waren Überfälle und das ergibt 845.000 Einbrüche, die von bewaffneten Bürgern verhindert wurden. Aber 1992 gab es ›nur‹ 1,3 Millionen Einbrüche während gleichzeitig jemand Zuhause war. Zwei Drittel davon geschahen als die Hausbesitzer schliefen und wurden erst entdeckt nachdem die Einbrecher schon weg waren. Übrig bleiben 430.000 Einbrüche bei denen die Hausbewohner anwesend *und* wach waren und den Einbrecher hätten stellen können. Von diesen 430.000 Einbrüchen wurden also 845.000 von bewaffneten Bürgern verhindert.
+
+Ooops.
+
+.. Such surveys have been done, with interesting results. One 1992 telephone survey
 estimated that American civilians use guns in self-defense up to 2.5 million
 times every year -- that is, about 1% of American adults have defended
 themselves with firearms. Now, 34% of these cases were in burglaries, giving us
@@ -185,7 +186,7 @@ burglar had left. That leaves 430,000 burglaries involving homeowners who were
 at home and awake to confront the burglar -- 845,000 of which, we are led to
 believe, were stymied by gun-toting residents.\ :cite:p:`Hemenway:1997up`
 
-Whoops.
+.. Whoops.
 
 What happened? Why did the survey overestimate the use of guns in self-defense?
 Well, for the same reason that mammograms overestimate the incidence of breast
@@ -389,3 +390,5 @@ rate. But it's a start, and it's much better than nothing.
   cancer; it just makes it exceedingly unlikely.
 
 .. [Kramer:2005in] Krämer, Walter, and Gerd Gigerenzer. "How to confuse with statistics or: The use and misuse of conditional probabilities." Statistical Science (2005): 223-230.
+
+.. [Bramwell:2006er] Bramwell, Ros, Helen West, and Peter Salmon. "Health professionals' and service users' interpretation of screening test results: experimental study." BMJ 333.7562 (2006): 284.
