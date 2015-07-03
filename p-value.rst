@@ -50,8 +50,7 @@ Bei 90 Substanzen, die keine Wirkungen haben werde ich annehmen das 5 davon eine
 
 Also führe ich meine Experimente durch und schließe, dass es 13 funktionierende Wirkstoffe gibt: 8 die wirklich funktionieren und 5 bei denen ich irrtümlich annehme das sie funktionieren. Diese sind in rot gezeigt:
 
-.. So I perform my experiments and conclude there are 13 working drugs: 8 good
-drugs and 5 I've included erroneously, shown in red:
+.. So I perform my experiments and conclude there are 13 working drugs: 8 good drugs and 5 I've included erroneously, shown in red:
 
 .. only:: html or text
 
@@ -86,11 +85,7 @@ Der p-Wert wird berechnet unter der Annahmen, dass der Wirkstoff *nicht wirkt* u
 
 Erinnere dich daran, wenn menschen mit p-Werten begründen, dass sie wahrscheinlich Recht haben. die Irrtumswahrscheinlichkeit ihrer Untersuchung ist fast sicher höher. In Bereichen, in deinen die meisten getesteten Hypothesen falsch sind, wie z.B. in der Frühphase von Medikamentenversuchen (die wenigsten Wirkstoffe nehmen diese Hürde), ist es  wahrscheinlich, dass die *meisten* »statistisch signifikanten« Ergebnisse mit :math:`p < 0.05` in Wirklichkeit falsch sind.
 
-.. When someone uses their *p* values to say they're probably right, remember
-this. Their study's probability of error is almost certainly much higher. In
-fields where most tested hypotheses are false, like early drug trials (most
-early drugs don't make it through trials), it's likely that *most*
-"statistically significant" results with :math:`p < 0.05` are actually flukes.
+.. When someone uses their *p* values to say they're probably right, remember this. Their study's probability of error is almost certainly much higher. In  fields where most tested hypotheses are false, like early drug trials (most early drugs don't make it through trials), it's likely that *most* "statistically significant" results with :math:`p < 0.05` are actually flukes.
 
 .. One good example is medical diagnostic tests. ..ausgelassen wh. von oben
 
@@ -105,7 +100,7 @@ early drugs don't make it through trials), it's likely that *most*
 Der Basisratenfehlschluss in Medizinischen Tests
 ----------------------------------------------
 
-Es gibt einigen Streit um die Nutzung von `Mammographie<https://de.wikipedia.org/wiki/Mammographie>`_. zur Brustgrebserkennung. Einige sagen, dass die Gefahr von falsch-positiven Ergebnissen (eine Person bekommt *fälschlicherweise* die Diagnose ›Brustkrebs‹) wie psychische Belastung, unnötige Biobsien, Operationen und Chemoterapie größer sind als der Nutzen einer früheren Krebserkennung. Das ist auch eine statistische Frage. Lass’ sie uns einschätzen.
+Es gibt einigen Streit um die Nutzung von `Mammographie <https://de.wikipedia.org/wiki/Mammographie>`_. zur Brustgrebserkennung. Einige sagen, dass die Gefahr von falsch-positiven Ergebnissen (eine Person bekommt *fälschlicherweise* die Diagnose ›Brustkrebs‹) wie psychische Belastung, unnötige Biobsien, Operationen und Chemoterapie größer sind als der Nutzen einer früheren Krebserkennung. Das ist auch eine statistische Frage. Lass’ sie uns einschätzen.
 
 
 .. There has been some controversy over the use of mammograms in screening breast cancer. Some argue that the dangers of false positive results, such as unnecessary biopsies, surgery and chemotherapy, outweigh the benefits of early cancer detection. This is a statistical question. Let's evaluate it.
@@ -175,59 +170,57 @@ Solche Umfragen wurden schon durchgeführt – mit interessanten Resultaten. Auf
 
 Ooops.
 
-.. Such surveys have been done, with interesting results. One 1992 telephone survey
-estimated that American civilians use guns in self-defense up to 2.5 million
-times every year -- that is, about 1% of American adults have defended
-themselves with firearms. Now, 34% of these cases were in burglaries, giving us
-845,000 burglaries stymied by gun owners. But in 1992, there were only 1.3
-million burglaries committed while someone was at home. Two thirds of these
-occurred while the homeowners were asleep and were discovered only after the
-burglar had left. That leaves 430,000 burglaries involving homeowners who were
-at home and awake to confront the burglar -- 845,000 of which, we are led to
-believe, were stymied by gun-toting residents.\ :cite:p:`Hemenway:1997up`
+.. Such surveys have been done, with interesting results. One 1992 telephone survey estimated that American civilians use guns in self-defense up to 2.5 million  times every year -- that is, about 1% of American adults have defended  themselves with firearms. Now, 34% of these cases were in burglaries, giving us 845,000 burglaries stymied by gun owners. But in 1992, there were only 1.3 million burglaries committed while someone was at home. Two thirds of these occurred while the homeowners were asleep and were discovered only after the burglar had left. That leaves 430,000 burglaries involving homeowners who were at home and awake to confront the burglar -- 845,000 of which, we are led to believe, were stymied by gun-toting residents.\ :cite:p:`Hemenway:1997up`
 
 .. Whoops.
 
-What happened? Why did the survey overestimate the use of guns in self-defense?
-Well, for the same reason that mammograms overestimate the incidence of breast
-cancer: there are far more opportunities for false positives than false
-negatives. If 99.9% of people have never used a gun in self-defense, but 1% of
-those people will answer "yes" to any question for fun, and 1% want to look
-manlier, and 1% misunderstand the question, then you'll end up *vastly*
-overestimating the use of guns in self-defense.
+Was ist da passiert? Warum hat die Umfrage den Gebrauch von Handfeuerwaffen zur Selbstverteidigung so überschätzt? Nun, aus dem selben grund wie die Mammographien das Auftreten von Brustkrebs überschätzen: Es gibt viel mehr Möglichkeiten für fälschlicherweise positive Ergebnisse (Daten sagen, die Waffe wurde gebraucht, obwohl es nicht wirklich so war) als für fälschlicherweise  negative Ergebnisse (Daten sagen, eine Waffe wurde nicht gebraucht, obwohl in Wirklichkeit eine Waffe gebraucht wurde).
 
-What about false negatives? Could this effect be balanced by people who say "no"
-even though they gunned down a mugger last week? No. If very few people
-genuinely use a gun in self-defense, then there are very few opportunities for
-false negatives. They're overwhelmed by the false positives.
+.. What happened? Why did the survey overestimate the use of guns in self-defense? Well, for the same reason that mammograms overestimate the incidence of breast cancer: there are far more opportunities for  false positives than false negatives. If 99.9% of people have never used a gun in self-defense, but 1% of those people will answer "yes" to any question for fun, and 1% want to look manlier, and 1% misunderstand the question, then you'll end up *vastly* overestimating the use of guns in self-defense.
 
-This is exactly analogous to the cancer drug example earlier. Here, *p* is the
+Wenn 99,9% der Menschen in Wirklichkeit niemals eine Waffe zur Selbsverteidigung genutzt haben, aber 1% aller Personen aus Spaß jede Fragen mit »Ja« beantworten, 1% möglichst »männlich« erscheinen will und 1% die Frage missverstehen, dann ist das Resultat eine *riesige* Pberschätzung der Nutzung von Waffen zur Selbstverteidigung.
+
+Wie ist es mit falschen Negativergebnissen? Könnten der Effekt der falschen Positivergebnisse durch die Antworten durch die Personen wieder ausgeglichen werden, die Antworten: »Nein, ich habe nie eine Waffe zur Selbstverteidigung gebraucht« obwohl sie in Wirklichkeit erst kürzlich einen Einbrecher abgeknallt haben? Nein. Wenn eine Waffe zur Selbstverteidigung nur von sehr wenigen Personen genutzt wird, dann gibt es auch nur wenige Möglichkeiten, falsche Negativergebnisse zu bekommen. Die falschen Negativergebnisse gehen unter in der Masse der falschen Positivergebnisse.
+
+
+.. What about false negatives? Could this effect be balanced by people who say "no" even though they gunned down a mugger last week? No. If very few people genuinely use a gun in self-defense, then there are very few opportunities for false negatives. They're overwhelmed by the false positives.
+
+Das ist exakt wie in dem Beispiel mit der Krebsmedikation weiter oben. Hier ist *p* die Wahrscheinlichkeit das eine Person fälschlicherweise behauptet, dass sie eine Waffe zur selbstverteidigung genutzt haben. Auch wenn *p* klein ist wird die Antworte am Ende total falsch sein.
+
+.. This is exactly analogous to the cancer drug example earlier. Here, *p* is the
 probability that someone will falsely claim they've used a gun in
 self-defense. Even if *p* is small, your final answer will be wildly wrong.
 
-To lower *p*, criminologists make use of more detailed surveys. The National
-Crime Victimization surveys, for instance, use detailed sit-down interviews with
-researchers where respondents are asked for details about crimes and their use
-of guns in self-defense. With far greater detail in the survey, researchers can
-better judge whether the incident meets their criteria for self-defense. The
-results are far smaller -- something like 65,000 incidents per year, not
-millions.  There's a chance that survey respondents underreport such incidents,
-but a much smaller chance of massive overestimation.
+.. DIREKTE ÜBERSETZUNG: Um *p* zu senken haben Kriminologen detailierte Umfragen genutzt.
+
+Um die Wahrscheinlichkeiten eines Irrtums zu senken, haben Kriminologen detailierte Umfragen genutzt. Die »National Crime Victimization«-Umfragen nutzen z.B. umfangreiche Interviews, die nicht nur im Vorübergehen geführt werden. Die Forscher fragen nach Details über die Verbrechen und die Nutzung von Waffen. Mit viel mehr Details in der Umfrage können die Forscher besser beurteilen, ob der Vorfall den Kriterien für Selbstverteidigung entspricht. Die Resultate sind kleiner. Umgefähr 65.000 Vorfälle pro Jahr – nicht mehrere Millionen. Es ist möglich, dass Teilnehmer Vorfälle nicht erwähnen, aber die Wahrscheinlichkeit für massivbe Überschätzung ist jetzt viel geringer.
+
+
+
+.. TODO: das ist verwirren – p klein, totzdem doof. Jetzt: P senken bessere ergebnisse.
+
+.. To lower *p*, criminologists make use of more detailed surveys. The National Crime Victimization surveys, for instance, use detailed sit-down interviews with  researchers where respondents are asked for details about crimes and their use of guns in self-defense. With far greater detail in the survey, researchers can better judge whether the incident meets their criteria for self-defense. The results are far smaller -- something like 65,000 incidents per year, not millions.  There's a chance that survey respondents underreport such incidents, but a much smaller chance of massive overestimation.
 
 .. index:: multiple comparisons
 
 .. _multiple-comparisons:
 
-If at first you don't succeed, try, try again
----------------------------------------------
+Wenn es nicht klappt: nochmal, nochmal, nochmap probieren.
 
-The base rate fallacy shows us that false positives are much more likely than
-you'd expect from a :math:`p < 0.05` criterion for significance. Most modern
-research doesn't make one significance test, however; modern studies compare the
-effects of a variety of factors, seeking to find those with the most significant
-effects.
+..  If at first you don't succeed, try, try again
+..---------------------------------------------
 
-For example, imagine testing whether jelly beans cause acne by testing the
+Der Basisratenfehlschluss zeigt und, dass falsche Positivergebnisse viel wahrscheinlicher sind, als du es bei einer Signifikanz von :math:`p < 0.05` erwarten würdest. Die meiste moderne Forschung macht nicht nur einen Signifikanztest. Moderne Studien vergleichen Auswirkungen einer Vielzahl von Faktoren um die zu finden die die signifikantesten Auswirkungen haben.
+
+.. TODO: ist modern hier "aktuell", "modisch" oder einfach ironisch gemeint? Is modern here "current", "fashinonable" or used ironcially?
+
+.. The base rate fallacy shows us that false positives are much more likely than you'd expect from a :math:`p < 0.05` criterion for significance. Most modern research doesn't make one significance test, however; modern studies compare the effects of a variety of factors, seeking to find those with the most significant effects.
+
+Stelle die z.B. vor, du untersuchst ob Gummibärchen Pickel verursachen, indem du den Effekt jeder einzelnen Gummibärchenfarbe testest:
+
+
+
+.. For example, imagine testing whether jelly beans cause acne by testing the
 effect of every single jelly bean color on acne:
 
 .. only:: html or text
@@ -244,21 +237,13 @@ effect of every single jelly bean color on acne:
 
      Cartoon from xkcd, by Randall Munroe. http://xkcd.com/882/
 
-As you can see, making multiple comparisons means multiple chances for a false
-positive. For example, if I test 20 jelly bean flavors which do not cause acne
-at all, and look for a correlation at :math:`p < 0.05` significance, I have a
-64% chance of a false positive result.\ :cite:p:`Smith:1987uz` If I test 45
-materials, the chance of false positive is as high as 90%.
+Wie in dem Comic dargestellt, gibt es die mehrfache Möglichkeit falsche Positivresultate zu finden, wenn man mehrfach Daten vergleicht. Wenn ich, z.B. 20 Gummibärchensorten vergleiche, die bei niemandem Akne auslösen aber auf eine Korrelation von Gummibärchensorte auf einem Signifikanzniveau von :math:`p < 0,05` schauehabe ich eine Wahrscheinlichkeit von 64% auf ein falsch-positives Ergebnis [Smith:1987uz]_.
 
-It's easy to make multiple comparisons, and it doesn't have to be as obvious as
-testing twenty potential medicines. Track the symptoms of a dozen patients for a
-dozen weeks and test for significant benefits during any of those weeks: bam,
-that's twelve comparisons. Check for the occurrence of twenty-three potential
-dangerous side effects: alas, you have sinned. Send out a ten-page survey asking
-about nuclear power plant proximity, milk consumption, age, number of male
-cousins, favorite pizza topping, current sock color, and a few dozen other
-factors for good measure, and you'll find that *something* causes cancer. Ask
-enough questions and it's inevitable.
+.. As you can see, making multiple comparisons means multiple chances for a false positive. For example, if I test 20 jelly bean flavors which do not cause acne at all, and look for a correlation at :math:`p < 0.05` significance, I have a 64% chance of a false positive result.\ :cite:p:`Smith:1987uz` If I test 45  materials, the chance of false positive is as high as 90%.
+
+Es ist einfach, mehrfache vergleiche durchzuführen und es muss nicht so offensichtlich sein wie das Testen von 20 möglichen Wirkstoffen. Miss’ die Symptome von einem dutzend Patienten für ein dutzend  Wochen und teste auf signifikante Verbesserungen. Bums, das sind zwölf Vergleiche! Teste das Auftreten von dreiundzwanzig Nebenwirklungen. Leider sündigst du auch hier. verschicke eine zehnseitige Umfrage, in der du nach Nähe zu Atomkraftwerken, Milchkonsum, Alter, Anzahl männlicher Cousins, Lieblingspizzabelag, aktuelle Sockenfarbe und einge andere Faktoren fragst. Du wirst herrausfinden das *irgendetwas* scheinbar  mit  :math:`p < 0,05` Krebs verursacht. Wenn du nur genug Fragen fragst, ist es unausweichlich.
+
+.. It's easy to make multiple comparisons, and it doesn't have to be as obvious as testing twenty potential medicines. Track the symptoms of a dozen patients for a dozen weeks and test for significant benefits during any of those weeks: bam, that's twelve comparisons. Check for the occurrence of twenty-three potential dangerous side effects: alas, you have sinned. Send out a ten-page survey asking about nuclear power plant proximity, milk consumption, age, number of male cousins, favorite pizza topping, current sock color, and a few dozen other factors for good measure, and you'll find that *something* causes cancer. Ask nough questions and it's inevitable.
 
 A survey of medical trials in the 1980s found that the average trial made 30
 therapeutic comparisons. In more than half of the trials, the researchers had
@@ -392,3 +377,5 @@ rate. But it's a start, and it's much better than nothing.
 .. [Kramer:2005in] Krämer, Walter, and Gerd Gigerenzer. "How to confuse with statistics or: The use and misuse of conditional probabilities." Statistical Science (2005): 223-230.
 
 .. [Bramwell:2006er] Bramwell, Ros, Helen West, and Peter Salmon. "Health professionals' and service users' interpretation of screening test results: experimental study." BMJ 333.7562 (2006): 284.
+
+..[Smith:1987uz] Smith, David Gary, et al. "Impact of multiple comparisons in randomized clinical trials." The American journal of medicine 83.3 (1987): 545-550.
