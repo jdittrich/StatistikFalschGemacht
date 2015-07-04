@@ -245,127 +245,108 @@ Es ist einfach, mehrfache vergleiche durchzuführen und es muss nicht so offensi
 
 .. It's easy to make multiple comparisons, and it doesn't have to be as obvious as testing twenty potential medicines. Track the symptoms of a dozen patients for a dozen weeks and test for significant benefits during any of those weeks: bam, that's twelve comparisons. Check for the occurrence of twenty-three potential dangerous side effects: alas, you have sinned. Send out a ten-page survey asking about nuclear power plant proximity, milk consumption, age, number of male cousins, favorite pizza topping, current sock color, and a few dozen other factors for good measure, and you'll find that *something* causes cancer. Ask nough questions and it's inevitable.
 
-A survey of medical trials in the 1980s found that the average trial made 30
-therapeutic comparisons. In more than half of the trials, the researchers had
-made so many comparisons that a false positive was highly likely, and the
-statistically significant results they did report were cast into doubt: they may
-have found a statistically significant effect, but it could just have easily
-been a false positive.\ :cite:p:`Smith:1987uz`
 
-There exist techniques to correct for multiple comparisons. For example, the
-Bonferroni correction method says that if you make :math:`n` comparisons in the
-trial, your criterion for significance should be :math:`p < 0.05/n`. This lowers
-the chances of a false positive to what you'd see from making only one
-comparison at :math:`p < 0.05`. However, as you can imagine, this reduces
-statistical power, since you're demanding much stronger correlations before you
-conclude they're statistically significant. It's a difficult tradeoff, and
-tragically few papers even consider it.
+Eine Umfrage zu Medizinischen Versuchen in dem 1980ern fand herraus das durchschnittlich 30 Vergleiche zu der Behandlung pro versuch gemacht wurden. In der Hälfte der Versuche wurden so viele Vergleiche gemacht, das es sehr wahrscheinlich war, falsche Positivresultate zu bekommen und die statistische Signifikanz der Resultate wurde in Zweifel gezogen: Zwar wurde ein statistisch signifikanter Effekt gefunden, aber dieser könnte genausogut ein falsches Positivresultat sein [Smith:1987uz]_.
+
+.. A survey of medical trials in the 1980s found that the average trial made 30 therapeutic comparisons. In more than half of the trials, the researchers had made so many comparisons that a false positive was highly likely, and the statistically significant results they did report were cast into doubt: they may have found a statistically significant effect, but it could just have easily been a false positive [Smith:1987uz]_.
+
+Es gibt Methoden, um das Risiko falsche Positivergebnisse zu bekommen zu reduzieren. Beispielsweise die Bonferroni-Korrektur: Wenn du :math:`n` Vergleiche in einem Versuch machst, sollte deine Schwelle für die Signifikanz  :math:`p < 0.05/n` sein. Das begrenzt die Wahrscheinlichkeit, für falsche Positivergebnisse in Versuchen mit mehrfachen Vergleichen auf die Wahrscheinlichkeit, die du hättest, wenn du nur einen Vergleich machst. Aber, wie du dir denken kannst, reduziert das auch die Teststärke denn du setzt eine viel stärkere Korrelation vorraus bevor du annimmst, dass die Korrelation statistisch signifikant ist. Es ist ein schwieriger Kompromiss, und tragischerweise wird nur in wenigen Veröffentlichungen überhaupt daraüber nachgedacht.
+
+.. There exist techniques to correct for multiple comparisons. For example, the Bonferroni correction method says that if you make :math:`n` comparisons in the trial, your criterion for significance should be :math:`p < 0.05/n`. This lowers the chances of a false positive to what you'd see from making only one  comparison at :math:`p < 0.05`. However, as you can imagine, this reduces statistical power, since you're demanding much stronger correlations before you conclude they're statistically significant. It's a difficult tradeoff, and tragically few papers even consider it.
+
+.. TODO: Versuchen mit mehrfachen Vergleichen auf die Wahrscheinlichkeit, die du hättest, wenn du nur einen Vergleich machst. STIMMT DAS?
 
 .. index:: multiple comparisons; Atlantic salmon
 
 .. _red-herrings:
 
-Red herrings in brain imaging
------------------------------
+Fischige Korrelationen in bildgebenden Verfahren
+-------------------------------------------------
 
-Neuroscientists do massive numbers of comparisons regularly. They often perform
-fMRI studies, where a three-dimensional image of the brain is taken before and
-after the subject performs some task. The images show blood flow in the brain,
-revealing which parts of the brain are most active when a person performs
-different tasks.
+.. Red herrings in brain imaging
+.. -----------------------------
 
-But how do you decide which regions of the brain are active during the task? A
-simple method is to divide the brain image into small cubes called voxels. A
-voxel in the "before" image is compared to the voxel in the "after" image, and
-if the difference in blood flow is significant, you conclude that part of the
-brain was involved in the task. Trouble is, there are thousands of voxels to
-compare and many opportunities for false positives.
+Neurowissenschaftler vergleichen oft viele Zahlen. Die Führen fMRI-Studien durch, bei denen ein dreidimensionales Bild des Gehirns vor- und nach einer einer Aufgabe gemacht wird, die der Teilnehmer durchführt. Die Bilder zeigen den Blutfluss im Gehirn und zeigen so, welche Teile des Gehirn aktiv sind, wenn verschiedene Aufgaben durchgeführt werden.
 
-One study, for instance, tested the effects of an "open-ended mentalizing task"
-on participants. Subjects were shown "a series of photographs depicting human
-individuals in social situations with a specified emotional valence," and asked
-to "determine what emotion the individual in the photo must have been
-experiencing." You can imagine how various emotional and logical centers of the
-brain would light up during this test.
+.. Neuroscientists do massive numbers of comparisons regularly. They often performfMRI studies, where a three-dimensional image of the brain is taken before andafter the subject performs some task. The images show blood flow in the brain,revealing which parts of the brain are most active when a person performs in different tasks.
 
-The data was analyzed, and certain brain regions found to change activity during
-the task. Comparison of images made before and after the mentalizing task showed
-a :math:`p = 0.001` difference in a :math:`81 \text{mm}^3` cluster in the brain.
+Aber wie erkennst du, welche Bereiche des Gehirns wärend einer Aufgabe aktiv sind? Eine einfache Methode ist das Gehirn in der Berechnung in keine Würfel aufzuteilen, die »Voxel« heißen (Voxel sind wie Pixel, aber eben dreidimensionale Würfel statt zweidimensionale Quadrate). Ein Voxel in dem »Davor« Bild wird mit dem Voxel in dem »Danach« Bild vergleichen. Wenn der Unterschied signifikant ist, kannst du schlussfolgern, dass der Teil des Gehirns an der Aufgabe beteiligt war. Das Problem ist, dass es tausende Voxel gibt die verglichen werden und viele Möglichkeiten so falsche positivergebnisse zu erzeugen.
 
-The study participants? Not college undergraduates paid $10 for their time, as
+.. But how do you decide which regions of the brain are active during the task? A simple method is to divide the brain image into small cubes called voxels. A voxel in the "before" image is compared to the voxel in the "after" image, and if the difference in blood flow is significant, you conclude that part of the  brain was involved in the task. Trouble is, there are thousands of voxels to compare and many opportunities for false positives.
+
+Eine Studie testete z.B. die Auswirkungen von »ergebnisoffenen Mentalisierungsaufgaben«. Teilnehmern wurden »Eine Reihe von Fotos mit Menschen in sozialen Situationen mit einer bestimmten emotionalen Wertigkeit« gezeigt. Sie sollten »feststellen, welche Emotion das Individuum in dem Foto erlebt«. Du kannst dir vorstellen wir verschiedene Zentren für Emotionen und Logik wärend des Tests »Aufleuchten« würden.
+
+.. One study, for instance, tested the effects of an "open-ended mentalizing task" on participants. Subjects were shown "a series of photographs depicting human individuals in social situations with a specified emotional  valence," and asked to "determine what emotion the individual in the photo must have been experiencing." You can imagine how various emotional and logical centers of the brain would light up during this test.
+
+.. TODO: »ergebnisoffenen Mentalisierungsaufgaben« richtig übersetzt?
+
+Die Datenanalyse zeigte das bestimmte Bereiche des Gehirns ihre Aktivität wärend der Aufgabe verändert haben. Ein Vergleich zwischen den Daten vor- und nach der Mentalisierungsaufgabe zeugte einen :math:`p = 0.001`- Unterschied in einem :math:`81 \text{mm}^3` Bereich des Gehirns.
+
+.. The data was analyzed, and certain brain regions found to change activity during the task. Comparison of images made before and after the mentalizing task showed a :math:`p = 0.001` difference in a :math:`81 \text{mm}^3` cluster in the brain.
+
+Die Testperson? Nicht ein Bachelorstudent, der $10 für seine Zeit bekam, wie sonst. Nein, der Teilnehmer war ein 3,8-Pfund Atlantik-Lachs, der »Nicht lebendig zur Zeit des Scans« war. [Bennett:2010uh]_.
+
+.. The study participants? Not college undergraduates paid $10 for their time, as
 is usual. No, the test subject was one 3.8-pound Atlantic salmon, which "was not
 alive at the time of scanning."\ :cite:p:`Bennett:2010uh`
 
-Of course, most neuroscience studies are more sophisticated than this; there are
-methods of looking for clusters of voxels which all change together, along with
-techniques for controlling the rate of false positives even when thousands of
-statistical tests are made. These methods are now widespread in the neuroscience
-literature, and few papers make such simple errors as I
-described. Unfortunately, almost every paper tackles the problem differently; a
-review of 241 fMRI studies found that they performed 223 unique analysis
-strategies, which, as we will discuss later, :ref:`gives the researchers great
-flexibility <freedom>` to achieve statistically significant results.\
-:cite:p:`Carp:2012ba`
+Natürlich sind die meisten neurowissenschaftlichen Studien ausgeklügelter als in dem Beispiel; Es gibt Methoden um Gruppierungen von Voxeln zu erkennen, die sich gemeinsam verändern und es gibt techniken um die Rate an falsch-positiven Ergebnissen zu kontrollieren, selbst wenn viele tausen Tests gemacht werden. Diese Methoden sind nun in der Neurowissenschaft weit verbreitet und wenige Veröffentlichungen machen einfache Fehler wie den in dem Beispiel beschreibenen. Umglücklicherweise geht fast jede Veröffentlichung anders mit dem Problem um; ein review von 241 fMRI-Studien fand herraus das 223 einzigartige Analysestrategien genutzt wurden. Das gibt den Forschenden, wie wir später besprechen werden, :ref:`große Flexibilität  <freedom>` um statistisch signifikante resultate zu erzielen. [Carp:2012ba]_.
+
+.. Of course, most neuroscience studies are more sophisticated than this; there are methods of looking for  clusters of voxels which all change together, along with techniques for controlling the rate of false positives even when thousands of statistical tests are made. These methods are now widespread in the neuroscience literature, and few papers make such simple errors as I described. Unfortunately, almost every paper tackles the problem differently; a review of 241 fMRI studies found that they performed 223 unique analysis strategies, which, as we will discuss later, :ref:`gives the researchers great flexibility <freedom>` to achieve statistically significant results.\ :cite:p:`Carp:2012ba`
 
 .. index:: multiple comparisons; false discovery rate, false discovery rate
 
 .. _false-discovery:
 
-Controlling the false discovery rate
-------------------------------------
+Auf falsch-positive Ergebnisse kontrollieren
 
-I mentioned earlier that techniques exist to correct for multiple
-comparisons. The Bonferroni procedure, for instance, says that you can get the
-right false positive rate by looking for :math:`p < 0.05/n`, where :math:`n` is
-the number of statistical tests you're performing. If you perform a study which
-makes twenty comparisons, you can use a threshold of :math:`p < 0.0025` to be
-assured that there is only a 5% chance you will falsely decide a nonexistent
-effect is statistically significant.
+.. Controlling the false discovery rate
+.. ------------------------------------
 
-This has drawbacks. By lowering the *p* threshold required to declare a result
-statistically significant, you decrease your statistical power greatly, and fail
-to detect true effects as well as false ones. There are more sophisticated
-procedures than the Bonferroni correction which take advantage of certain
-statistical properties of the problem to improve the statistical power, but they
-are not magic solutions.
+Schon zuvor habe ich erwähnt, das techniken exitistieren um für Mehrfachvergleiche zu korrigieren. Die Bonferroni-korrektur z.B. sagt das du die richtige Rate für falsch-positive Ergebnisse erreichst, indem du statt :math:`p < 0.05` das Signifikanniveau :math:`p < 0.05/n` nimmst – wobei :math:`n` die Anzahl der Vergleiche ist, die du machst. Wenn du einen Studie mit 20 Vergleichen durchführst nutzt du einen Signifikanzschwelle von :math:`p < 0.0025` um sicherzustellen das es nur eine 5%ige Wahrscheinlichkeit gibt das du fälschlicherweise einen nicht exisiterenden Unterschied für Statistisch signifikant hältst.
 
-Worse, they don't spare you from the base rate fallacy. You can still be misled
-by your *p* threshold and falsely claim there's "only a 5% chance I'm wrong" --
-you just eliminate some of the false positives. A scientist is more interested
-in the false discovery rate: what fraction of my statistically significant
-results are false positives? Is there a statistical test that will let me
-control this fraction?
+.. I mentioned earlier that techniques exist to correct for multiple comparisons. The Bonferroni procedure, for instance, says that you can get the right false positive rate by looking for :math:`p < 0.05/n`, where :math:`n` is the number of statistical tests you're performing. If you perform a study which makes twenty comparisons, you can use a threshold of :math:`p < 0.0025` to be assured that there is only a 5% chance you will falsely decide a  nonexistent effect is statistically significant.
 
-For many years the answer was simply "no." As you saw in the section on the base
-rate fallacy, we can compute the false discovery rate if we make an assumption
-about how many of our tested hypotheses are true -- but we'd rather find that
-out from the data, rather than guessing.
+Das hat Nachteile. Durch das senken der Signifikanzschwelle, bei der eine Ergebnis als statistisch signifikant betrachtet wird, verkleinert sich auch die Teststärke erheblich. Du kannst wirst viele fälschliche Effekte *und* wirkliche Effekte nicht feststellen. Es gibt fortgeschrittenere Prozeduren als die Bonferroni-Korrektur die bestimmte statistische Eigenschaften des Problems ausnutzen um die Teststärke zu erhöhnen, aber auch diese sind keine magischen Problemlösungen.
 
-In 1995, Benjamini and Hochberg provided a better answer. They devised an
-exceptionally simple procedure which tells you which *p* values to consider
-statistically significant. I've been saving you from mathematical details so
-far, but to illustrate just how simple the procedure is, here it is:
+.. This has drawbacks. By lowering the *p* threshold required to declare a result statistically significant, you decrease your statistical power greatly, and fail to detect true effects as well as false ones. There are more sophisticated procedures than the Bonferroni correction which take advantage of certain statistical properties of the problem to improve the statistical power, but they are not magic solutions.
 
-1. Perform your statistical tests and get the *p* value for each. Make a list
-   and sort it in ascending order.
-2. Choose a false-discovery rate and call it *q*. Call the number of statistical
-   tests *m*.
-3. Find the largest *p* value such that :math:`p \leq i q/m`, where *i* is the
-   *p* value's place in the sorted list.
-4. Call that *p* value and all smaller than it statistically significant.
+Schimmer noch, sie ersparen dir den Basisratenfehlschluss nicht. Du kannst immernoch von deiner Signifikanzschwelle fehlgeleitet werden und fälschlicherweise behaupten, dass es »nur eine 5%ige Wahrscheinlichkeit gibt, dass ich falsch liege«. Du hast einige der fälschlicherweise positiven Ergebnisse ausgeschlossen. Als ein wissenschafter bin ich interessierter an der »False Discovery Rate« interessiert: Welcher Anteil meiner statistisch signifikanten Ergebnisse sind falsch? Gibt es einen statistischen Test der diesen Anteil kontrolliert?
 
-You're done! The procedure guarantees that out of all statistically significant
-results, no more than *q* percent will be false positives.\
-:cite:p:`Benjamini:1995ws`
+.. TODO: Schwierig: was ist der Unterschied zwischen false positive und false discovery rate?
 
-The Benjamini-Hochberg procedure is fast and effective, and it has been widely
-adopted by statisticians and scientists in certain fields. It usually provides
-better statistical power than the Bonferroni correction and friends while giving
-more intuitive results. It can be applied in many different situations, and
-variations on the procedure provide better statistical power when testing
-certain kinds of data.
+.. Worse, they don't spare you from the base rate fallacy. You can still be misled by your *p* threshold and  falsely claim there's "only a 5% chance I'm wrong" -- you just eliminate some of the false positives. A scientist is more interested in the false discovery rate: what fraction of my statistically significant results are false positives? Is there a statistical test that will let me control this fraction?
 
-Of course, it's not perfect. In certain strange situations, the
+Viele Jahre lang war die Antwort einfach »Nein«. Wie du in der Sektion zum Basisratenfehlschluss geshen hast können wir den Anteil falscher positivergebnisse Berechnen, wenn wir eine Annahme treffen wie viele der getesteten Hypothesen wirklich zutreffen. Aber wir sollten das besser mit unseren Daten herrausfinden, anstatt einfach zu raten.
+
+.. For many years the answer was simply "no." As you saw in the section on the base rate fallacy, we can compute the false discovery rate if we make an assumption about how many of our tested hypotheses are true -- but we'd  rather find that out from the data, rather than guessing.
+
+1995 gaben Benjamini und Hochberg eine Lösung für das Problem. Sie entwickelten eine außerordentlich einfache Prozedur, mit der du feststellen kannst, welch *p*-Werte du als statistisch signifikant betrachten solltest. Ich erspare dir die mathematischen Details, aber um zu illustrieren, wie einfach die Prozedur ist – hier ist sie:
+
+1. Führe deine statistischen Tests durch und erreche einen *p*-Wert für jeden. Mache eine Liste und ordne sie aufsteigender Reihenfolge
+2. Wähle eine False Discovery Rate und nenne sie »q«. Nenne die Anzahl der Tests »m«.
+3. Finde den größten *p*-Wert sodass :math:`p \leq i q/m`, wobei *i* die Position des *p*-Wertes in der sortierten Liste von *p*-Werten ist.
+4. Dieser p-Wert, und alle die kleiner sind, sind statistisch signifikant.
+
+Fertig! Diese Prozedur garantiert, dass aus allen als statistisch signifikant befundenen nicht mehr als *q* Prozent falsche Positivergebnisse sind. [Benjamini:1995ws]_.
+
+
+.. In 1995, Benjamini and Hochberg provided a better answer. They devised an exceptionally simple procedure which tells you which *p* values to consider statistically significant. I've been saving you from mathematical details so far, but to illustrate just how simple the procedure is, here it is:
+
+.. 1. Perform your statistical tests and get the *p* value for each. Make a list    and sort it in ascending order.
+.. 2. Choose a false-discovery rate and call it *q*. Call the number of statistical    tests *m*.
+.. 3. Find the largest *p* value such that :math:`p \leq i q/m`, where *i* is the    *p* value's place in the sorted list.
+.. 4. Call that *p* value and all smaller than it statistically significant.
+
+.. You're done! The procedure guarantees that out of all statistically significant results, no more than *q* percent will be false positives.\ :cite:p:`Benjamini:1995ws`
+
+Die Benjamini-Hochberg-Prozedur ist schnell und effektiv und wurde von vielen Statistikern und bestimmten Wissenschaftsgebietet genutzt. Sie ergibt üblicherwiese einen bessere Teststärke als die Bonferroni-Korrektur und ihre Freunde, und gibt zudem noch intuitivere Resultate. Die Benjamini-Hochberg-Prozedur kann in vielen verschiedenen Situationen angewendet werden und abwandlungen davon geben verbesserte Teststärke wenn bestimmte Arten von Daten getestet werden.
+
+.. The Benjamini-Hochberg procedure is fast and effective, and it has been widely adopted by statisticians and scientists in certain fields. It usually provides better statistical power than the Bonferroni correction and friends while giving  more intuitive results. It can be applied in many different situations, and variations on the procedure provide better statistical power when testing certain kinds of data.
+
+Natürlich ist die Prozedur nicht perfekt. In bestimmten seltsamen Situationen erzeugt die Prozedur unsinnige Ergebnisse und es wurde mathematisch bewiesen dann es immer möglich ist, sie bei  der Kontrolle der False-Dicovery-Rate zu übertreffen. Aber es ist ein Anfang und viel besser als nichts.
+
+.. Of course, it's not perfect. In certain strange situations, the
 Benjamini-Hochberg procedure gives silly results, and it has been mathematically
 shown that it is always possible to beat it in controlling the false discovery
 rate. But it's a start, and it's much better than nothing.
@@ -378,4 +359,10 @@ rate. But it's a start, and it's much better than nothing.
 
 .. [Bramwell:2006er] Bramwell, Ros, Helen West, and Peter Salmon. "Health professionals' and service users' interpretation of screening test results: experimental study." BMJ 333.7562 (2006): 284.
 
-..[Smith:1987uz] Smith, David Gary, et al. "Impact of multiple comparisons in randomized clinical trials." The American journal of medicine 83.3 (1987): 545-550.
+.. [Smith:1987uz] Smith, David Gary, et al. "Impact of multiple comparisons in randomized clinical trials." The American journal of medicine 83.3 (1987): 545-550.
+
+.. [Bennett:2010uh] Bennett, Craig M., M. B. Miller, and G. L. Wolford. "Neural correlates of interspecies perspective taking in the post-mortem Atlantic Salmon: An argument for multiple comparisons correction." Neuroimage 47.Suppl 1 (2009): S125.
+
+.. [Carp:2012ba] Carp, Joshua. "The secret lives of experiments: methods reporting in the fMRI literature." Neuroimage 63.1 (2012): 289-300.
+
+.. [Benjamini:1995ws] Benjamini, Yoav, and Yosef Hochberg. "Controlling the false discovery rate: a practical and powerful approach to multiple testing." Journal of the Royal Statistical Society. Series B (Methodological) (1995): 289-300.
