@@ -36,106 +36,95 @@ Beispiele für diesen Fehler sind finden sich zuhauf in der üblichen Literatur 
 
 .. Examples of this error in common literature and news stories abound. A huge  proportion of papers in neuroscience, for instance, commit the error.\ :cite:p:`Nieuwenhuis:2011dm` You might also remember a study a few years  ago suggesting that men with more biological older brothers are more likely to  be homosexual.\ :cite:p:`Bogaert:2006tc` How did they reach this conclusion? And why older brothers and not older sisters?
 
-The authors explain their conclusion by noting that they ran an analysis of
-various factors and their effect on homosexuality. Only the number of older
-brothers had a statistically significant effect; number of older sisters, or
-number of nonbiological older brothers, had no statistically significant effect.
+Die Autoren erklären ihr Ergebnis damit, dass die verschiedene Faktoren und ihre Auswirkungen auf homosexualität analysiert haben. Nur die Anzahl der ältern Brüder hatte  statistisch signifikante Auswirkungen; die Anzahl von älteren schwestern oder die Anzhal nicht biologischer (z.B. adoptierte) Brüder  hatte keine signifikante Auswirkungen.
 
-But as we've seen, that doesn't guarantee that there's a significant difference
-between the effects of older brothers and older sisters. In fact, taking a
-closer look at the data, it appears there's no statistically significant
-difference between the effect of older brothers and older sisters.
-Unfortunately, not enough data was published in the paper to allow a direct
-calculation.\ :cite:p:`Gelman:2006bj`
+.. The authors explain their conclusion by noting that they ran an analysis of various factors and their effect on homosexuality. Only the number of older brothers had a statistically significant effect; number of older sisters, or number of nonbiological older brothers, had no statistically significant effect.
+
+Aber wie wir gesehen haben garantieren die unterschiedlichen Signifikanzen nicht, dass es einen relevanten Unterschied zwischen den Auswirkungen von ältern Brüdern und älternen Schwestern gibt. Bei einem genauerem Blick auf die daten scheint es, ess es keinen statistisch signifikanten Unterschied zwischen den Auswirkungen von älteren Schwestern und älteren Brüdern gäbe. Leider wurden in der Publikation nicht genug Daten veröffentlicht um das selber nachzurechnen [Gelman:2006bj]_.
+
+.. But as we've seen, that doesn't guarantee that there's a significant difference between the effects of older brothers and older sisters. In fact, taking a closer look at the data, it appears there's no statistically significant difference between the effect of older brothers and older sisters. Unfortunately, not enough data was published in the paper to allow a direct calculation.\ :cite:p:`Gelman:2006bj`
 
 .. index:: confidence interval, standard error, standard deviation
 
 .. _confidence-intervals:
 
-When significant differences are missed
----------------------------------------
+.. When significant differences are missed
+.. ---------------------------------------
 
-The problem can run the other way. Scientists routinely judge whether a
-significant difference exists simply by eye, making use of plots like this one:
+Wenn signifikante Ergebnisse übersehen werden
+---------------------------------------------
+
+Es gibt auch das umgekehrte Problem. Wissenschaftler beurteilen üblicherweise durch das anschauen von Digarmmen wie dem folgenden, ob eine signifikante Differenz besteht:
+
+.. The problem can run the other way. Scientists routinely judge whether a significant difference exists simply by eye, making use of plots like this one:
 
 .. figure:: plots/confidence.*
-   :alt: Two group means plotted with overlapping confidence intervals
+   :alt: Diagramme zweier mathematischer Durchschnittswerte mit sich überlappenden Konfidenzintervallen.
 
-Imagine the two plotted points indicate the estimated time until recovery from
-some disease in two different groups of patients, each containing ten
-patients. There are three different things those error bars could represent:
+Stell dir vor, die beiden Diagramme zeigen die geschätzte Zeit bis zur Genesung von einer Krankheit in zwei Patientengruppen, in jeder Gruppe mit 10 Patienten. Drei verschiedene Sachen könnten durch die Fehlerbalken gezeigt werden:
 
-#. The standard deviation of the measurements. Calculate how far each
-   observation is from the average, square each difference, and then average the
-   results and take the square root. This is the standard deviation, and it
-   measures how spread out the measurements are from their mean.
-#. The standard error of some estimator. For example, perhaps the error bars are
-   the standard error of the mean. If I were to measure many different samples
-   of patients, each containing exactly *n* subjects, I can estimate that 68% of
-   the mean times to recover I measure will be within one standard error of
-   "real" average time to recover. (In the case of estimating means, the
-   standard error is the standard deviation of the measurements divided by the
-   square root of the number of measurements, so the estimate gets better as you
-   get more data -- but not too fast.) Many statistical techniques, like
-   least-squares regression, provide standard error estimates for their results.
-#. The confidence interval of some estimator. A 95% confidence interval is
-   mathematically constructed to include the true value for 95 random samples
-   out of 100, so it spans roughly two standard errors in each direction. (In
-   more complicated statistical models this may not be exactly true.)
+#. Die Standardabweichung der Messungen. Berechnet wurde, wie wie weit jede Beobachtung vom Durchschnitt entfernt ist, jede dieser Differenzen wurde quadriert, der Durchschnitt über diese quadrierten Differenzen errechnet und dann von dem Durchschnitt die Quadratwurzel gezogen. Das Ergebnis ist die Standardabweichung und misst, wieweit die Messungen vom Durchschnitt über alle  Messungen abweichen.
+#. Die Standardabweichung eines Schätzwertes. Zum Beispiel die die Fehlerbalken vielleicht die Standardfehler des arithmetischen Mittelwertes. Wenn wir verschiedene Stichproben aus Patienten sammeln, und jede Stichprobe genau *n* Patienten hat, kann ich schätzen, dass meine Berechnung der durchschnittlichen Zeit bis zur Heilung in 68% aller Fälle *innerhalb eines Standardfehlers* von der »wirklichen« Zeit entfernt liegt (Im Falle der Abschätzung von Durchschnittswerten ist der Standardfehler die standardabweichung der Messungen, geteilt durch die Quadratwurzel der Anzahl der Messungen. Die Abschätzung wird also langsam besser, je mehr Daten du hast) Viele statistische Methoden wie die »Least-Square-Regression« (Methode der kleinesten Quadrate) geben eine Abschätzung des Standardfehlers.
+#. Das Koonfidenzinterval eines Schätzwertes. Ein 95% Konfidenzinterval ist so berechnet dass es den wahren Schätzwert in 95 von 100 Stichproben enthält. Es ist ungefähr 2 Standardfehler in jede Richtung breit (In komplizierten statistischen Modellen ist das möglichweise nicht ganz richtig.)
 
-These three options are all different. The standard deviation is a simple
-measurement of my data. The standard error tells me how a statistic, like a mean
-or the slope of a best-fit line, would likely vary if I take many samples of
-patients. A confidence interval is similar, with an additional guarantee that
-95% of 95% confidence intervals should include the "true" value.
+.. Imagine the two plotted points indicate the estimated time until recovery from some disease in two different groups of patients, each containing ten patients. There are three different things those error bars could represent:
 
-In the example plot, we have two 95% confidence intervals which overlap. Many
-scientists would view this and conclude there is no statistically significant
-difference between the groups. After all, groups 1 and 2 *might not* be
-different -- the average time to recover could be 25 in both groups, for
-example, and the differences only appeared because group 1 was lucky this
-time. But does this mean the difference is not statistically significant?  What
-would the :ref:`p value <p-values>` be?
+.. #. The standard deviation of the measurements. Calculate how far each    observation is from the average, square each difference, and then average the    results and take the square root. This is the standard deviation,  and it    measures how spread out the measurements are from their mean.
+.. #. The standard error of some estimator. For example, perhaps the error bars are    the standard error of the mean. If I were to measure many different samples   of patients, each containing exactly *n* subjects, I can estimate that 68% of the mean times to recover I measure will be within one standard error of   "real" average time to recover. (In the case of estimating means, the   standard error is the standard deviation of the measurements divided by the   square root of the number of measurements, so the estimate gets better as you   get more data -- but not too fast.) Many statistical techniques, like   least-squares regression, provide standard error estimates for their results.
+#. The confidence interval of some estimator. A 95% confidence interval is   mathematically constructed to include the true value for 95 random samples   out of 100, so it spans roughly two standard errors in each direction. (In   more complicated statistical models this may not be exactly true.)
 
-In this case, :math:`p< 0.05`. There is a statistically significant difference
-between the groups, even though the confidence intervals overlap. [#ttest]_
 
-Unfortunately, many scientists skip hypothesis tests and simply glance at plots
-to see if confidence intervals overlap. This is actually a much more
-conservative test -- requiring confidence intervals to not overlap is akin to
-requiring :math:`p < 0.01` in some cases.\ :cite:p:`Schenker:2001cr` It is easy
-to claim two measurements are not significantly different even when they are.
 
-Conversely, comparing measurements with standard errors or standard deviations
-will also be misleading, as standard error bars are shorter than confidence
-interval bars. Two observations might have standard errors which do not overlap,
-and yet the difference between the two is not statistically significant.
+.. These three options are all different. The standard deviation is a simplemeasurement of my data. The standard error tells me how a statistic, like a meanor the slope of a best-fit line, would likely vary if I take many samples of patients. A confidence interval is similar, with an additional guarantee that 95% of 95% confidence intervals should include the "true" value.
 
-A survey of psychologists, neuroscientists and medical researchers found that
-the majority made this simple error, with many scientists confusing standard
-errors, standard deviations, and confidence intervals.\ :cite:p:`Belia:2005dg`
-Another survey of climate science papers found that a majority of papers which
-compared two groups with error bars made the error.\ :cite:p:`Lanzante:2005hi`
-Even introductory textbooks for experimental scientists, such as *An
-Introduction to Error Analysis*, teach students to judge by eye, hardly
-mentioning formal hypothesis tests at all.
+.. TODO: What is a meanor?!? (in:»…how a statistic, like a meanor the slope of a best-fit line, would likely vary…«)
 
-There are, of course, formal statistical procedures which generate confidence
-intervals which *can* be compared by eye, and even correct for :ref:`multiple
-comparisons <multiple-comparisons>` automatically. For example, Gabriel
-comparison intervals are easily interpreted by eye.\ :cite:p:`Gabriel:1978fp`
+Dies sind drei verschiedene Möglichkeiten: Die Standardabweichung ist ein einfacher Wert, den ich aus meinen Daten errechne; der Standardfehler sagt mir wie eine Statisik, wie z.B. die steigung einer gefitteten linearen Funktion zwischen verschiedenen Stichproben variieren würde. Ein Konfidenzinterval ist ähnlich – mit der zusätzlichen Garantie, dass – bei einem 95%-Konfidenzinterval – 95% der Konfidenzintervalle den wirklichen Wert (den der Population) enthalten.
 
-Overlapping confidence intervals do not mean two values are not significantly
-different. Similarly, separated standard error bars do not mean two values *are*
-significantly different. It's always best to use the appropriate hypothesis test
-instead. Your eyeball is not a well-defined statistical procedure.
+In dem Beispieldiagramm haben wir zwei 95% Konfidenzintervale, die sich überschneiden. Viele Forscher würden das betrachten und schlussfolgern, dass es keinen statistisch signifikanten Unterschied zwischen den Gruppen gibt. Immerhin Gruppe 1 und Gruppe 2 *sind vielleicht nicht* unterschiedlich – die Anzahlder  durchschnittlichen Tage bis zur Heilung könnte in beiden Gruppen z.B. 25 sein und die Unterschiede in den Messungen sind zufällig. Aber bedeutet das, dass der Unterschied statistisch nicht signifikant ist? Was sind die :ref:`p werte <p-values>`?
+
+.. In the example plot, we have two 95% confidence intervals which overlap. Many scientists would view this and conclude there is no statistically significant difference between the groups. After all, groups 1 and 2 *might not* be different -- the average time to recover could be 25 in both groups, for example, and the differences only appeared because group 1 was lucky this time. But does this mean the difference is not statistically significant? What would the :ref:`p value <p-values>` be?
+
+In diesem, Fall haben wir :math:`p< 0.05`. Es gibt einen statistisch signifikanten Unterschied obwohl sich die Bereiche der Konfidenzintervalle überschneiden. [#ttest]_
+
+.. In this case, :math:`p< 0.05`. There is a statistically significant difference  between the groups, even though the confidence intervals overlap. [#ttest]_
+
+Leider überspringen viele Wissenschaftler den Hypothesentest und schauen einfach auf ihre Diagramme, um zu prüfen, ob sich die Konfidenzintervalle überschneiden. Das ist tatsächlich ein sehr viel konservatieverer Test: Die Forderung, das sich die Konfidenzintervalle nicht überlappen ist in einigen Fällen vergleichbar mit der Anforderung, eine Signifikanz von :math:`p < 0.01` zu erreichen.  [Schenker:2001cr]_.
+
+.. Unfortunately, many scientists skip hypothesis tests and simply glance at plots to see if confidence intervals overlap. This is actually a much more conservative test -- requiring confidence intervals to not overlap is akin to requiring :math:`p < 0.01` in some cases.\ :cite:p:`Schenker:2001cr` It is easyto claim two measurements are not significantly different even when they are.
+
+Umgekehrt ist es so, dass der (visuelle) Vergleich  mittels Standardfehlern oder Standardabweichungen auch irreführend sein werden, da in den Diagrammen Standardfehler-Balken kürzer als Konfidenzinterval-Balken sind. Zwei Messungen können Standardfehler-Balken haben, die sich nicht überlappen, und doch ist der Unterschied zwischen dem beiden Gruppen nicht statistisch signifikant.
+
+.. Conversely, comparing measurements with standard errors or standard deviations will also be misleading, as standard error bars are shorter than confidence  interval bars. Two observations might have standard errors which do not overlap,and yet the difference between the two is not statistically significant.
+
+Eine Umfrage unter Psychologen, Neurowissenschaftlern und Medizinischen Forschern fand herraus, das die meisten von ihnen diesen einfachen Fehler machen und dass viele Wissdenschaftler Standardfehler, Standardabweichung und Konfidenzintervalle verwechseln. [Belia:2005dg]_. Diese Fehler fand sich auch in den meisten klimawissenschaftlichen Veröffentlichungen wenn in diesen zwei Gruppen mittels Fehlerbalken verglichen wurden. [Lanzante:2005hi]_. Sogar einführende Lehrbücher wie *An Introduction to Error Analysis* (»Eine Einführung in die Fehleranalyse«), bringen Studierenden bei, die Grafiken zu vergleichen und erwähnen kaum formale Methoden für Hypothesentests.
+
+.. A survey of psychologists, neuroscientists and medical researchers found that the majority made this simple error, with many scientists confusing standard errors, standard deviations, and confidence intervals.\ :cite:p:`Belia:2005dg`Another survey of climate science papers found that a majority of papers which compared two groups with error bars made the error.\ :cite:p:`Lanzante:2005hi`Even introductory textbooks for experimental scientists, such as *An Introduction to Error Analysis*, teach students to judge by eye, hardly mentioning formal hypothesis tests at all.
+
+Natürlich gibt es formale statistische Prozeduren die Konfidenzintervalle berechnen die visuell verglichen werden können und das sogar automatisch korrekt in :ref:`mehrfachvergleichen <multiple-comparisons>`. Beispielsweise können Gabriel comparision intervals (Gabriel-Vergleichs-Intervalle) einfach durch Anschauen interpretiert werden. [Gabriel:1978fp]_.
+
+.. There are, of course, formal statistical procedures which generate confidence intervals which *can* be compared by eye, and even correct for :ref:`multiplecomparisons <multiple-comparisons>` automatically. For example, Gabriel comparison intervals are easily interpreted by eye.\ :cite:p:`Gabriel:1978fp`
+
+Sich überschneidente Konfidenzintervalle bedeuten nicht das zwei Werte signifikant unterschiedlich sind. Ebenso bedeuten sich nicht berührende Fehlerbalken *nicht* das zwei Werte signifikant unterschiedlich sind. Es ist immer am besten, den geeigneten Hypothesentest zu nutzen. Sich Diagramme anzuschauen ist keinen gut definierte statistische Methode.
+
+..Overlapping confidence intervals do not mean two values are not significantly different. Similarly, separated standard error bars do not mean two values *are*significantly different. It's always best to use the appropriate hypothesis testinstead. Your eyeball is not a well-defined statistical procedure.
+
 
 .. [#ttest]
-   This was calculated with an unpaired *t* test, based on a standard
-   error of 2.5 in group 1 and 3.5 in group 2.
+Dies wurden mit einem unabhängigen *t*-Test berechnet, basierend auf einem Standardfehler von 2,5 in Gruppe 1 und 3,5 in Gruppe 2.
+
+.. This was calculated with an unpaired *t* test, based on a standard   error of 2.5 in group 1 and 3.5 in group 2.
 
 .. [Gelman:2006bj] Gelman, Andrew, and Hal Stern. "The difference between “significant” and “not significant” is not itself statistically significant." The American Statistician 60.4 (2006): 328-331.
 
 .. [Nieuwenhuis:2011dm] Nieuwenhuis, Sander, Birte U. Forstmann, and Eric-Jan Wagenmakers. "Erroneous analyses of interactions in neuroscience: a problem of significance." Nature neuroscience 14.9 (2011): 1105-1107.
 
 .. [Bogaert:2006tc] Bogaert, Anthony F. "Biological versus nonbiological older brothers and men’s sexual orientation." Proceedings of the National Academy of Sciences 103.28 (2006): 10771-10774.
+
+..  [Schenker:2001cr] Schenker, Nathaniel, and Jane F. Gentleman. "On judging the significance of differences by examining the overlap between confidence intervals." The American Statistician 55.3 (2001): 182-186.
+
+.. [Belia:2005dg] Belia, Sarah, et al. "Researchers misunderstand confidence intervals and standard error bars." Psychological methods 10.4 (2005): 389.
+
+.. [Lanzante:2005hi] Lanzante, John R. "A cautionary note on the use of error bars." Journal of climate 18.17 (2005): 3699-3703.
+
+.. [Gabriel:1978fp] Gabriel, K. Ruben. "A simple method of multiple comparisons of means." Journal of the American Statistical Association 73.364 (1978): 724-729.
