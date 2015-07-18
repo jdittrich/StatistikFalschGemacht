@@ -107,7 +107,7 @@ Natürlich gibt es formale statistische Prozeduren die Konfidenzintervalle berec
 
 Sich überschneidente Konfidenzintervalle bedeuten nicht das zwei Werte signifikant unterschiedlich sind. Ebenso bedeuten sich nicht berührende Fehlerbalken *nicht* das zwei Werte signifikant unterschiedlich sind. Es ist immer am besten, den geeigneten Hypothesentest zu nutzen. Sich Diagramme anzuschauen ist keinen gut definierte statistische Methode.
 
-..Overlapping confidence intervals do not mean two values are not significantly different. Similarly, separated standard error bars do not mean two values *are*significantly different. It's always best to use the appropriate hypothesis testinstead. Your eyeball is not a well-defined statistical procedure.
+.. Overlapping confidence intervals do not mean two values are not significantly different. Similarly, separated standard error bars do not mean two values *are*significantly different. It's always best to use the appropriate hypothesis testinstead. Your eyeball is not a well-defined statistical procedure.
 
 
 .. [#ttest]
