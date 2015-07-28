@@ -21,7 +21,7 @@ Inhalt
 * `Pseudoreplikation <pseudoreplication.rst>`_
 * `p-Werte <p-value.rst>`_
 * `Signifikante Unterschiede <significant-differences.rst>`_
-* `Freiheitsgrade <freedom.rst>`_
+* `Freiheiten der Forschenden <freedom.rst>`_
 * `Fehler <mistakes.rst>`_
 * `Verstecken <hiding.rst>`_
 * `Resultate <results.rst>`_
