@@ -59,7 +59,7 @@ Lass einfach die Einzelheiten aus
 ---------------------------------
 
 .. Just leave out the details
-..--------------------------
+.. --------------------------
 
 Pingelige Statistiker sorgen für schlechte Laune, indem sie Fehler in deiner Publikation aufzeigen? Die klare Lösung: Gib ihnen nicht so viele Einzelheiten über deine Analyse. Sie können keine Fehler finden, wenn du nicht sagtst, wie du deine Daten analysiert hast.
 
@@ -79,7 +79,7 @@ Ungefähr die Hälfte der gemessenen Resultate waren nicht in wissenschaftlichen
 
 .. index:: stopping rules; omitted
 
-Andere Berichte fanden ähnliche Probleme. Ein Bericht über medizinische Versuche fand herraus, dass die meisten Studien wichtige methodische Details ausließen, die :ref:`halteregeln ("stopping rules") <stopping-rules>`, also wann die Datensammlung gestoppt wird, und :ref:`Teststärke <power>`, wobei Studien in kleinen Journals für Spezialisten schlechter waren als solche in großen, allgemeinen Medizinischen Publikationen [HuwilerMuntener:2002ij]_
+Andere Berichte fanden ähnliche Probleme. Ein Bericht über medizinische Versuche fand herraus, dass die meisten Studien wichtige methodische Details ausließen, die `Halteregeln ("stopping rules") <stopping-rules>`_, also wann die Datensammlung gestoppt wird, und `Teststärke <power>`_, wobei Studien in kleinen Journals für Spezialisten schlechter waren als solche in großen, allgemeinen Medizinischen Publikationen [HuwilerMuntener:2002ij]_
 
 .. NOTE: hier wohl eher "methodische" statt methodologische
 
