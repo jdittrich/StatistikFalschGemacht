@@ -104,8 +104,9 @@ Wissenschaft im Aktenschrank
 
 .. Science in a filing cabinet
 .. ---------------------------
+In vorhergehenden Kapiteln haben wir den Einfluss von Mehrfachvergleichen und Wahrheitsinflation auf Studienergebnisse gesprochen. Die Probleme entstehen, wenn in den Studien mehrere Vergleichen mit niedriger Teststärke gemacht werden. Das führt zu einer großen Menge an fälschlicherweise positiven Ergebnissen und aufgeblasenen Schätzungen der Effektgrößen. Diese Probleme gibt es überall in wissenschaftlichen Veröffentlichungen. 
 
-Earlier we saw the impact of :ref:`multiple comparisons <multiple-comparisons>` and :ref:`truth inflation <truth-inflation>` on study results. These problems arise when studies make numerous comparisons with low statistical power, giving a high rate of false positives and inflated estimates of effect sizes, and they appear everywhere in published research.
+.. Earlier we saw the impact of :ref:`multiple comparisons <multiple-comparisons>` and :ref:`truth inflation <truth-inflation>` on study results. These problems arise when studies make numerous comparisons with low statistical power, giving a high rate of false positives and inflated estimates of effect sizes, and they appear everywhere in published research.
 
 But not every study is published. We only ever see a fraction of medical research, for instance, because few scientists bother publishing "We tried this medicine and it didn't seem to work."
 
