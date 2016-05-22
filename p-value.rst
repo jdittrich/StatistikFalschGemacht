@@ -10,7 +10,7 @@ p-Werte und Prävalenzfehler
 .. The *p* value and the base rate fallacy
 .. ***************************************
 
-Du hast schon gesehen, das *p*-Werte schwierig zu interpretieren sind. Ein statistisch nicht signifikanter Unterschied (der *p*-Wert ist also über ddeiner gewählten Signifikanzschwelle) bedeutet nicht, dass es keinen Unterschied gäbe. Aber wie sieht es aus, wenn ich tatsächlich  einen statistisch signifikanten Unterschied habe?
+Du hast schon gesehen, dass *p*-Werte schwierig zu interpretieren sind. Ein statistisch nicht signifikanter Unterschied (der *p*-Wert ist also über deiner gewählten Signifikanzschwelle) bedeutet nicht, dass es keinen Unterschied gäbe. Aber wie sieht es aus, wenn ich einen statistisch signifikantes Ergebnis habe?
 
 .. You've already seen that *p* values are hard to interpret. Getting a statistically insignificant result doesn't mean there's no difference. What about getting a significant result?
 
@@ -31,7 +31,7 @@ Zur Demonstration habe ich das Problem visualisiert: Jedes Quadrat in dem Gitter
    .. figure:: /plots/drug-grids-1.*
       :scale: 50%
 
-Wie wir gesehen haben können die meisten Versuche nicht jeden funktionierenden Wirkstoff erkennen. Wir werden annehmen, dass mein Test eine Teststärke von 0,8 hat. Von 10 funktionierenden Wirkstoffen werde ich durchschnittlich 8 korrekt erkennen. Diese sind in Violett dargestellt.
+Wie wir gesehen haben, können die meisten Versuche nicht jeden funktionierenden Wirkstoff erkennen. Wir werden annehmen, dass mein Test eine Teststärke von 0,8 hat. Von 10 funktionierenden Wirkstoffen werde ich durchschnittlich 8 korrekt erkennen. Diese sind in Violett dargestellt.
 
 .. As we saw, most trials can't perfectly detect every good medication. We'll assume my tests have a statistical power of 0.8. Of the ten good drugs, I will correctly detect around eight of them, shown in purple:
 
@@ -61,7 +61,7 @@ Also führe ich meine Experimente durch und schließe, dass es 13 funktionierend
    .. figure:: /plots/drug-grids-3.*
       :scale: 50%
 
-Die Wahrscheinlichkeit dass ein – laut der Auswertung – funktionierender Wirkstoff wirklich funktioniert ist nur 62%. Das heißt: Wenn ich aus all den 100 Wirkstoffen einen auswählt, diesen Teste und eine auf dem Niveau :math:`p < 0.05` statistisch signifikanten Unterschied finde besteht nur eine 62%-ige Chance, dass der Wirkstoff tatsächlich funktioniert. Der Anteil von statistisch signifikanten Resultaten die in Wirklichkeit fälschlicherweise als funktionierende Wirkstoffe klassifiziert werden, die »False Discovery Rate«, ist 38%.
+Die Wahrscheinlichkeit dass ein – laut der Auswertung – funktionierender Wirkstoff wirklich funktioniert ist nur 62%. Das heißt: Wenn ich aus all den 100 Wirkstoffen einen auswähle, diesen Wirkstoff teste und eine auf dem Niveau :math:`p < 0.05` statistisch signifikanten Unterschied finde, besteht nur eine 62%-ige Chance, dass der Wirkstoff tatsächlich funktioniert. Der Anteil von statistisch signifikanten Resultaten, die aber in Wirklichkeit fälschlicherweise als funktionierend klassifiziert Wirkstoffe sind (die »False Discovery Rate«) ist 38%.
 
 .. The chance of any given "working" drug being truly effectual is only 62%. If I were to randomly select a drug out of the lot of 100, run it through my tests, and discover a :math:`p < 0.05` statistically significant benefit, there is only a 62% chance that the drug is actually effective. In statistical terms, my false discovery rate -- the fraction of statistically significant results which are really false positives -- is 38%.
 
@@ -205,7 +205,8 @@ Um die Wahrscheinlichkeiten eines Irrtums zu senken, haben Kriminologen detailie
 
 .. _multiple-comparisons:
 
-Wenn es nicht klappt: nochmal, nochmal, nochmap probieren.
+Wenn es nicht klappt: nochmal, nochmal, nochmal probieren.
+----------------------------------------------------------
 
 ..  If at first you don't succeed, try, try again
 ..---------------------------------------------
@@ -260,7 +261,7 @@ Es gibt Methoden, um das Risiko falsche Positivergebnisse zu bekommen zu reduzie
 
 .. _red-herrings:
 
-Fischige Korrelationen in bildgebenden Verfahren
+Suspekte Korrelationen in bildgebenden Verfahren
 -------------------------------------------------
 
 .. Red herrings in brain imaging
@@ -274,7 +275,7 @@ Aber wie erkennst du, welche Bereiche des Gehirns wärend einer Aufgabe aktiv si
 
 .. But how do you decide which regions of the brain are active during the task? A simple method is to divide the brain image into small cubes called voxels. A voxel in the "before" image is compared to the voxel in the "after" image, and if the difference in blood flow is significant, you conclude that part of the  brain was involved in the task. Trouble is, there are thousands of voxels to compare and many opportunities for false positives.
 
-Eine Studie testete z.B. die Auswirkungen von »ergebnisoffenen Mentalisierungsaufgaben«. Teilnehmern wurden »Eine Reihe von Fotos mit Menschen in sozialen Situationen mit einer bestimmten emotionalen Wertigkeit« gezeigt. Sie sollten »feststellen, welche Emotion das Individuum in dem Foto erlebt«. Du kannst dir vorstellen wir verschiedene Zentren für Emotionen und Logik wärend des Tests »Aufleuchten« würden.
+Eine Studie testete z.B. die Auswirkungen von »ergebnisoffenen Vorstellungsaufgaben«. Teilnehmern wurden »Eine Reihe von Fotos mit Menschen in sozialen Situationen mit einer bestimmten emotionalen Wertigkeit« gezeigt. Sie sollten »feststellen, welche Emotion das Individuum in dem Foto erlebt«. Du kannst dir vorstellen, wie verschiedene Zentren für Emotionen und Logik wärend des Tests »Aufleuchten« würden.
 
 .. One study, for instance, tested the effects of an "open-ended mentalizing task" on participants. Subjects were shown "a series of photographs depicting human individuals in social situations with a specified emotional  valence," and asked to "determine what emotion the individual in the photo must have been experiencing." You can imagine how various emotional and logical centers of the brain would light up during this test.
 
@@ -286,11 +287,9 @@ Die Datenanalyse zeigte das bestimmte Bereiche des Gehirns ihre Aktivität wäre
 
 Die Testperson? Nicht ein Bachelorstudent, der $10 für seine Zeit bekam, wie sonst. Nein, der Teilnehmer war ein 3,8-Pfund Atlantik-Lachs, der »Nicht lebendig zur Zeit des Scans« war. [Bennett:2010uh]_.
 
-.. The study participants? Not college undergraduates paid $10 for their time, as
-is usual. No, the test subject was one 3.8-pound Atlantic salmon, which "was not
-alive at the time of scanning."\ :cite:p:`Bennett:2010uh`
+.. The study participants? Not college undergraduates paid $10 for their time, as is usual. No, the test subject was one 3.8-pound Atlantic salmon, which "was not alive at the time of scanning."\ :cite:p:`Bennett:2010uh`
 
-Natürlich sind die meisten neurowissenschaftlichen Studien ausgeklügelter als in dem Beispiel; Es gibt Methoden um Gruppierungen von Voxeln zu erkennen, die sich gemeinsam verändern und es gibt techniken um die Rate an falsch-positiven Ergebnissen zu kontrollieren, selbst wenn viele tausen Tests gemacht werden. Diese Methoden sind nun in der Neurowissenschaft weit verbreitet und wenige Veröffentlichungen machen einfache Fehler wie den in dem Beispiel beschreibenen. Umglücklicherweise geht fast jede Veröffentlichung anders mit dem Problem um; ein review von 241 fMRI-Studien fand herraus das 223 einzigartige Analysestrategien genutzt wurden. Das gibt den Forschenden, wie wir später besprechen werden, :ref:`große Flexibilität  <freedom>` um statistisch signifikante resultate zu erzielen. [Carp:2012ba]_.
+Natürlich sind die meisten neurowissenschaftlichen Studien ausgeklügelter als in dem Beispiel; Es gibt Methoden um Gruppierungen von Voxeln zu erkennen, die sich gemeinsam verändern und es gibt Techniken, um die Rate an falsch-positiven Ergebnissen zu kontrollieren, selbst wenn viele tausen Tests gemacht werden. Diese Methoden sind heute in der Neurowissenschaft weit verbreitet und wenige Veröffentlichungen machen einfache Fehler wie den in dem Beispiel beschreibenen. Unglücklicherweise geht fast jede Veröffentlichung anders mit dem Problem um; ein Review von 241 fMRI-Studien fand herraus, dass 223 einzigartige Analysestrategien genutzt wurden. Das gibt den Forschenden, wie wir später besprechen werden, :ref:`große Flexibilität  <freedom>` um statistisch signifikante Resultate zu erzielen. [Carp:2012ba]_.
 
 .. Of course, most neuroscience studies are more sophisticated than this; there are methods of looking for  clusters of voxels which all change together, along with techniques for controlling the rate of false positives even when thousands of statistical tests are made. These methods are now widespread in the neuroscience literature, and few papers make such simple errors as I described. Unfortunately, almost every paper tackles the problem differently; a review of 241 fMRI studies found that they performed 223 unique analysis strategies, which, as we will discuss later, :ref:`gives the researchers great flexibility <freedom>` to achieve statistically significant results.\ :cite:p:`Carp:2012ba`
 
@@ -299,6 +298,7 @@ Natürlich sind die meisten neurowissenschaftlichen Studien ausgeklügelter als 
 .. _false-discovery:
 
 Auf falsch-positive Ergebnisse kontrollieren
+------------------------------------------
 
 .. Controlling the false discovery rate
 .. ------------------------------------
@@ -352,8 +352,7 @@ shown that it is always possible to beat it in controlling the false discovery
 rate. But it's a start, and it's much better than nothing.
 
 
-.. [#male] Interestingly, being male doesn't exclude you from getting breast
-  cancer; it just makes it exceedingly unlikely.
+.. [#male] Interestingly, being male doesn't exclude you from getting breast   cancer; it just makes it exceedingly unlikely.
 
 .. [Kramer:2005in] Krämer, Walter, and Gerd Gigerenzer. "How to confuse with statistics or: The use and misuse of conditional probabilities." Statistical Science (2005): 223-230.
 
