@@ -79,7 +79,7 @@ Ungefähr die Hälfte der gemessenen Resultate waren nicht in wissenschaftlichen
 
 .. index:: stopping rules; omitted
 
-Andere Berichte fanden ähnliche Probleme. Ein Bericht über medizinische Versuche fand herraus, dass die meisten Studien wichtige methodische Details ausließen, die `Halteregeln ("stopping rules") <stopping-rules>`_, also wann die Datensammlung gestoppt wird, und `Teststärke <power>`_, wobei Studien in kleinen Journals für Spezialisten schlechter waren als solche in großen, allgemeinen Medizinischen Publikationen [HuwilerMuntener:2002ij]_
+Andere Berichte fanden ähnliche Probleme. Ein Bericht über medizinische Versuche fand herraus, dass die meisten Studien wichtige methodische Details ausließen, die :ref:`halteregeln ("stopping rules") <stopping-rules>`, also wann die Datensammlung gestoppt wird, und :ref:`Teststärke <power>`, wobei Studien in kleinen Journals für Spezialisten schlechter waren als solche in großen, allgemeinen Medizinischen Publikationen [HuwilerMuntener:2002ij]_
 
 .. NOTE: hier wohl eher "methodische" statt methodologische
 
@@ -105,7 +105,9 @@ Wissenschaft im Aktenschrank
 .. Science in a filing cabinet
 .. ---------------------------
 
-Earlier we saw the impact of :ref:`multiple comparisons <multiple-comparisons>` and :ref:`truth inflation <truth-inflation>` on study results. These problems arise when studies make numerous comparisons with low statistical power, giving a high rate of false positives and inflated estimates of effect sizes, and they appear everywhere in published research.
+Zuvor haben wir den Einfluss von :ref:`Mehrfachvergleichen <multiple-comparisons>` und :ref:`truth inflation <truth-inflation>` 
+
+.. Earlier we saw the impact of :ref:`multiple comparisons <multiple-comparisons>` and :ref:`truth inflation <truth-inflation>` on study results. These problems arise when studies make numerous comparisons with low statistical power, giving a high rate of false positives and inflated estimates of effect sizes, and they appear everywhere in published research.
 
 But not every study is published. We only ever see a fraction of medical research, for instance, because few scientists bother publishing "We tried this medicine and it didn't seem to work."
 
