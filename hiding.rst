@@ -33,7 +33,7 @@ Die Wissenschaftler hatten nach 6 Monaten Daten von 64 Studien – insgesammt ha
 
 .. Of the 249 studies they sought data for, they had only received data for 64 six months later. Almost three quarters of study authors never sent their data.\ :cite:p:`Wicherts:2006jg`
 
-Natürlich sind Wissenschaftler viel beschäftigte Leute und vielleicht hatten die wissenscahftler deshalb keine Zeit ihre Datensätze zusammenzustellen, Dokumenten zu schreiben, was die Variablen im einzelnen aussagen und wie diese gemessen wurden und so weiter.
+Natürlich sind Wissenschaftler viel beschäftigte Leute und vielleicht hatten die Wissenschaftler deshalb keine Zeit, ihre Datensätze zusammenzustellen, Dokumenten zu schreiben, die erklären, was die Variablen im einzelnen aussagen und wie diese gemessen wurden und so weiter.
 
 .. Of course, scientists are busy people, and perhaps they simply didn't have the
 time to compile their datasets, produce documents describing what each variable
@@ -115,7 +115,9 @@ Aber nicht jede Studie wird veröffenticht. Wir bekommen nur einen kleinen Teil 
 
 .. But not every study is published. We only ever see a fraction of medical research, for instance, because few scientists bother publishing "We tried this medicine and it didn't seem to work."
 
-Consider an example: studies of the tumor suppressor protein TP53 and its effect on head and neck cancer. A number of studies suggested that measurements of TP53 could be used to predict cancer mortality rates, since it serves to regulate cell growth and development and hence must function correctly to prevent cancer. When all 18 published studies on TP53 and cancer were analyzed together, the result was a highly statistically significant correlation: TP53 could clearly be measured to tell how likely a tumor is to kill you.
+Hier ein Beispiel: Studien des Tumorsuppressor-Proteins TP53 und seine Wirkung auf Kopf- und Nackenkrebs. Eine Anzahl von Studien legt nahe, dass die Messung von TP53 genutzt werden können um die Mortalitätsraten der Kreberkrankung vorherzusagen, da das Protein dazu dient Zellwachstum und Entwicklung reguliert. Deshalb muss es korrekt funktionieren, damit Kebs verhindert wird. Nachdem alle 18 veröffentlichte Studien über TP53 und Krebs zusammen analysiert wurden, war das Ergebnis eine hohe, statistisch signifikante correlation: TP53 kann offensichtlich gemessen werden um herrauszufinden wie wahrscheinlich es ist, dass ein Tumor jemanden umbringt. 
+
+.. Consider an example: studies of the tumor suppressor protein TP53 and its effect on head and neck cancer. A number of studies suggested that measurements of TP53 could be used to predict cancer mortality rates, since it serves to regulate cell growth and development and hence must function correctly to prevent cancer. When all 18 published studies on TP53 and cancer were analyzed together, the result was a highly statistically significant correlation: TP53 could clearly be measured to tell how likely a tumor is to kill you.
 
 But then suppose we dig up *unpublished* results on TP53: data that had been mentioned in other studies but not published or analyzed. Add this data to the mix and the statistically significant effect vanishes.\ :cite:p:`Kyzas:2005ep` After all, few authors bothered to publish data showing no correlation, so the meta-analysis could only use a biased sample.
 
