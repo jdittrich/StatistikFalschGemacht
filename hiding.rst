@@ -131,7 +131,7 @@ Das Problem ist bekannt als »Publication-Bias« (Veröffentlichungs-Verzerrung)
 
 .. This problem is commonly known as publication bias or the file-drawer problem: many studies sit in a file drawer for years, never published, despite the valuable data they could contribute.
 
-Das Problem ist nicht einfach die Verzerrung der Veröffentlcihten Ergebnisse. Unveröffentlichte Studien führen zu einer vervielfachung des Aufwandes -- wenn andere Wissenschaftler nciht wissen, dass du eine Studie durchgeführt hast, machen die anderen Wissenschaftler diese Studien nochmal und verschwenden dabei Geld und Mühen. 
+Das Problem ist nicht einfach die Verzerrung der Veröffentlichten Ergebnisse. Unveröffentlichte Studien führen zu einer vervielfachung des Aufwandes -- wenn andere Wissenschaftler nciht wissen, dass du eine Studie durchgeführt hast, machen die anderen Wissenschaftler diese Studien nochmal und verschwenden dabei Geld und Mühen. 
 
 .. The problem isn't simply the bias on published results. Unpublished studies lead to a duplication of effort -- if other scientists don't know you've done a study, they may well do it again, wasting money and effort.effort.
 
