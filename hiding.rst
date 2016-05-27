@@ -135,9 +135,15 @@ Das Problem ist nicht einfach die Verzerrung der Veröffentlcihten Ergebnisse. U
 
 .. The problem isn't simply the bias on published results. Unpublished studies lead to a duplication of effort -- if other scientists don't know you've done a study, they may well do it again, wasting money and effort.effort.
 
-Regulators and scientific journals have attempted to halt this problem. The Food and Drug Administration requires certain kinds of clinical trials to be registered through their website ClinicalTrials.gov before the trials begin, and requires the publication of results within a year of the end of the trial. Similarly, the International Committee of Medical Journal Editors announced in 2005 that they would not publish studies which had not been pre-registered.
+Regulatoren und wissenschaftliche Journals haben versucht das Problem zu verhindert. Die Nahrungs- und Medikamenten-Verwaltung verlangt, dass bestimmte Arten von klinischen Versuchen innerhalb eines Jahres nach dem Studienende registriert werden. vergleichbarerweise hat dass Internationale Kommitee der Autoren medizinischer Journals 2005 angekündigt, dass nur noch Studien veröffentlicht werden die vorher registriert wurden.
 
-Unfortunately, a review of 738 registered clinical trials found that only 22% met the legal requirement to publish.\ :cite:p:`Prayle:2011cs` The FDA has not fined any drug companies for noncompliance, and journals have not consistently enforced the requirement to register trials. Most studies simply vanish.
+.. was sind genau 
+
+.. Regulators and scientific journals have attempted to halt this problem. The Food and Drug Administration requires certain kinds of clinical trials to be registered through their website ClinicalTrials.gov before the trials begin, and requires the publication of results within a year of the end of the trial. Similarly, the International Committee of Medical Journal Editors announced in 2005 that they would not publish studies which had not been pre-registered.
+
+Leider hat ein Review von 738 registrierten klinischen Studien ergeben, dass nur 22% die rechtlichen Anforderungen für eine veröffentlichung erfüllen konnten. Das FDA hat keine Strafen gegenüber Gesundheitskonzernen erhoben und Journals haben nicht immer diie Anforderung der versuchsregistrierung durchgesetzt. Die meisten Studien verschwinden einfach. 
+
+.. Unfortunately, a review of 738 registered clinical trials found that only 22% met the legal requirement to publish.\ :cite:p:`Prayle:2011cs` The FDA has not fined any drug companies for noncompliance, and journals have not consistently enforced the requirement to register trials. Most studies simply vanish.
 
 .. [#xkcd]
    Witz schamlos gestohlen aus dem Alternativtext von http://xkcd.com/552/.
