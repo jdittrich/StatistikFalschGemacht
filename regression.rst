@@ -113,13 +113,17 @@ Was passiert hier? Nun, schau auf einen Plot der Testergebnisse und der Schulgr�
 .. figure:: /plots/school-size.*
    :alt:
 
-Smaller schools have more widely varying average test scores, entirely because
+Die durchschnittlichen Testergebnisse variieren stärker bei kleinen Schulen, einfach weil sie weniger Schüler haben. Mit weniger Schülern gibt es weniger Daten anhand derer die »wirkliche« Leistung der Lehrer festgestellt werden kann. Dadurch varrieren die Durschnittliche Punktzahlen stärker. Bei größeren Schulen variieren die Testergebnisse weniger und sind im Durchschnitt sogar *höher*. 
+
+.. Smaller schools have more widely varying average test scores, entirely because
 they have fewer students. With fewer students, there are fewer data points to
 establish the "true" performance of the teachers, and so the average scores vary
 widely. As schools get larger, test scores vary less, and in fact *increase* on
 average.
 
-This example used simulated data, but it's based on real (and surprising)
+Dieses Beispiel nutzt simulierte Daten, aber es basiert auf echten (und überrschenden) Messungen an öffentlichen Schulen in Pennsylvania \ :cite:p:`Wainer:2007wr` .
+
+.. This example used simulated data, but it's based on real (and surprising)
 observations of Pennsylvania public schools.\ :cite:p:`Wainer:2007wr`
 
 Another example: In the United States, counties with the lowest rates of
@@ -150,3 +154,5 @@ residents.\ :cite:p:`Gelman:1999gi`
 .. [Bassler:2010ds] Bassler, Dirk, et al. "Stopping randomized trials early for benefit and estimation of treatment effects: systematic review and meta-regression analysis." Jama 303.12 (2010): 1180-1187.
 
 .. [Montori:2005bo] Montori, Victor M., et al. "Randomized trials stopped early for benefit: a systematic review." JOURNAL-AMERICAN MEDICAL ASSOCIATION 294.17 (2005): 2203.
+
+.. [Wainer:2007wr] Wainer, Howard. "The most dangerous equation." American Scientist 95.3 (2007): 249.
