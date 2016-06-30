@@ -108,7 +108,7 @@ Dann schaust du die die schlechtesten Schulen an. Du erwartest, dass sie alle gr
 
 Was passiert hier? Nun, schau auf einen Plot der Testergebnisse und der Schulgröße:
 
-... What's going on? Well, take a look at a plot of test scores vs. school size:
+.. What's going on? Well, take a look at a plot of test scores vs. school size:
 
 .. figure:: /plots/school-size.*
    :alt:
@@ -126,16 +126,22 @@ Dieses Beispiel nutzt simulierte Daten, aber es basiert auf echten (und überrsc
 .. This example used simulated data, but it's based on real (and surprising)
 observations of Pennsylvania public schools.\ :cite:p:`Wainer:2007wr`
 
-Another example: In the United States, counties with the lowest rates of
+Ein anderes Beispiel: Die Landkreise in den Vereinigten Staaten die die niedrigsten Anteil an Menschen mit :index`Nierenkrebs` haben sind oft in ländlichen Gegenden des Mittleren Westens, Südens und Westes. Wie kann das sein? Man kann sich viele erklärungen vorstellen: in ländlichen Gegenden gibt es frischen Luft, Menschen bewegen sich mehr und leben vielleicht ein weniger stressiges Leben. Vielleicht senken diese Faktoren die Krebsrate.  
+
+.. Another example: In the United States, counties with the lowest rates of
 :index:`kidney cancer` tend to be Midwestern, Southern and Western rural
 counties. How could this be? You can think of many explanations: rural people
 get more exercise, inhale less polluted air, and perhaps lead less stressful
 lives. Perhaps these factors lower their cancer rates.
 
-On the other hand, counties with the highest rates of kidney cancer tend to be
+Andererseits sind die Landkreise mit den höchsten Krebsraten oft in ländlichen Gebieten des Mittleren Westes, Wesetes oder Südens der USA. 
+
+.. On the other hand, counties with the highest rates of kidney cancer tend to be
 Midwestern, Southern and Western rural counties.
 
-The problem, of course, is that rural counties have the smallest populations. A
+Das Problem, natürlich, ist das ländliche Landkreise die kleinste Einwohnerzahl haben. Ein einziger Patient mit Nierenkrebs in eine Landkreis mit zehn Einwohnern macht, dass dieser Landkreis die höchste Krebsrate in der ganzen Nation hat. Kleine Landkreise haben variablere Krebsraten, einfach weil sie so wenige Einwohner haben. \ :cite:p:`Gelman:1999g`i
+
+.. The problem, of course, is that rural counties have the smallest populations. A
 single kidney cancer patient in a county with ten residents gives that county
 the highest kidney cancer rate in the nation. Small counties hence have vastly
 more variable kidney cancer rates, simply because they have so few
@@ -156,3 +162,5 @@ residents.\ :cite:p:`Gelman:1999gi`
 .. [Montori:2005bo] Montori, Victor M., et al. "Randomized trials stopped early for benefit: a systematic review." JOURNAL-AMERICAN MEDICAL ASSOCIATION 294.17 (2005): 2203.
 
 .. [Wainer:2007wr] Wainer, Howard. "The most dangerous equation." American Scientist 95.3 (2007): 249.
+
+.. [Gelman:1999gi] Gelman, Andrew, and Phillip N. Price. "All maps of parameter estimates are misleading." Statistics in medicine 18.23 (1999): 3221-3234.
