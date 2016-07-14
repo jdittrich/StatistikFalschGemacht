@@ -100,10 +100,11 @@ Wir sehen, dass es publizierten Berichten in unserer Analysie nicht besonders gu
 .. We see that published papers aren't faring very well. What about *unpublished* studies?
 
 Wissenschaft im Aktenschrank
-----------------------------»
+-----------------------------
 
 .. Science in a filing cabinet
 .. ---------------------------
+
 In vorhergehenden Kapiteln haben wir den Einfluss von Mehrfachvergleichen und Wahrheitsinflation auf Studienergebnisse gesprochen. Die Probleme entstehen, wenn in den Studien mehrere Vergleichen mit niedriger Teststärke gemacht werden. Das führt zu einer großen Menge an fälschlicherweise positiven Ergebnissen und aufgeblasenen Schätzungen der Effektgrößen. Diese Probleme gibt es überall in wissenschaftlichen Veröffentlichungen. 
 
 
@@ -131,13 +132,21 @@ Eine ähnliche Studie betrachtete Rebotoxine, ein Antidepressivum, das von Pfize
 
 .. A similar study looked at reboxetine, an antidepressant sold by Pfizer. Several published studies have suggested that it is effective compared to placebo, leading several European countries to approve it for prescription to depressed patients. The German Institute for Quality and Efficiency in Health Care, responsible for assessing medical treatments, managed to get unpublished trial data from Pfizer -- three times more data than had ever been published -- and carefully analyzed it. The result: reboxetine is not effective. Pfizer had only convinced the public that it's effective by neglecting to mention the studies proving it isn't.\ :cite:p:`Eyding:2010bx`
 
-This problem is commonly known as publication bias or the file-drawer problem: many studies sit in a file drawer for years, never published, despite the valuable data they could contribute.
+Dieses Problem ist als Publikations-Verzerrung oder Schubladen-Problem bekannt. viele Studien liegen für jahre in der Schublade, werden nie veröffentlicht, trotz wertvoller Daten, die dadurch beigetragen werden könnten. 
 
-The problem isn't simply the bias on published results. Unpublished studies lead to a duplication of effort -- if other scientists don't know you've done a study, they may well do it again, wasting money and effort.effort.
+.. This problem is commonly known as publication bias or the file-drawer problem: many studies sit in a file drawer for years, never published, despite the valuable data they could contribute.
 
-Regulators and scientific journals have attempted to halt this problem. The Food and Drug Administration requires certain kinds of clinical trials to be registered through their website ClinicalTrials.gov before the trials begin, and requires the publication of results within a year of the end of the trial. Similarly, the International Committee of Medical Journal Editors announced in 2005 that they would not publish studies which had not been pre-registered.
+Das Problem ist nicht einfach die Verzerrung durch unveröffentlichte Daten. Unveröffentlichte Studien führen zu einer Vervielfachung des Aufwands – wenn andere Wissenschaftler nicht wissen, dass du eine Studie durchgeführt hast, forschen sie vielleicht wieder zum selben Thema und verschwenden Geld und Mühen. 
 
-Unfortunately, a review of 738 registered clinical trials found that only 22% met the legal requirement to publish.\ :cite:p:`Prayle:2011cs` The FDA has not fined any drug companies for noncompliance, and journals have not consistently enforced the requirement to register trials. Most studies simply vanish.
+.. The problem isn't simply the bias on published results. Unpublished studies lead to a duplication of effort -- if other scientists don't know you've done a study, they may well do it again, wasting money and effort.
+
+Regulierer und wissenschaftliche Journals haben versucht das Problem einzudämmen. Die US-Amerikanische Food and Drug Administration verlangt, dass manche Arten von klinischen versuchen auf ihrer Website ClinicalTrials.gov registriert werden müssen, bevor die Studie beginnt und macht ees erforderlich, dass die Resultate innerhalb eines Jahres nach dem Ende des Versuches veröffentlicht werden müssen. Entsprechend hat auch das International Committee of Medical Journal Editors verkündet, dass sie keine Studien mehr veröffentlichen würden, die nicht zuvor registriert wurden. 
+
+.. Regulators and scientific journals have attempted to halt this problem. The Food and Drug Administration requires certain kinds of clinical trials to be registered through their website ClinicalTrials.gov before the trials begin, and requires the publication of results within a year of the end of the trial. Similarly, the International Committee of Medical Journal Editors announced in 2005 that they would not publish studies which had not been pre-registered.
+
+Leider hat eine Studie über 738 registrierte Versuche herrausefunden, dass nur 22% die rechtlichen Anforderungen für eine Veröffentlichung erfüllten. \ :cite:p:`Prayle:2011cs`. Die Food and Drug Administration hat keine Strafen auf Zuwiederhandlung für Pharmafirmen erhoben und die Journals haben die Anforderung für die Registrierung von versuchen nicht immer durchgesetzt. Die meisten Studien verschwinden einfach. 
+
+.. Unfortunately, a review of 738 registered clinical trials found that only 22% met the legal requirement to publish.\ :cite:p:`Prayle:2011cs` The FDA has not fined any drug companies for noncompliance, and journals have not consistently enforced the requirement to register trials. Most studies simply vanish.
 
 .. [#xkcd]
    Witz schamlos gestohlen aus dem Alternativtext von http://xkcd.com/552/.
