@@ -49,14 +49,7 @@ Wobei das nicht ganz der Realität entspricht. Wissneschaftler nehmen resultate 
 
 Das ist besorgniserregend. Gibt es diese Tendenz auch für weniger spekulative Arten der medizinischen Forschung? Anscheinend: Unter den meistzitierten Forschungsartikeln in der Medizin sind ein Viertel nach ihrer Publikation nicht getestet wurden und ein Drittel der Ergebnisse stellte sich bei später Foschung als übertrieben oder falsch herraus. [Ioannidis:2005gy]_ Das ist nicht so extrem wie das Ergebnis der Amgen-Forscher aber es sorgt dafür, dass du dich wunderst welche gewichtigen Fehler immernoch unbemerkt in wichtiger Forschung lauern. Replikation ist nicht so verbreitet, wie wir es gerne hätten und die Resultate der Replikation sind nicht immer günstig für die untersuchte Publikation. 
 
-.. This is worrisome. Does the trend hold true for less speculative kinds of
-medical research? Apparently so: of the top-cited research articles in medicine,
-a quarter have gone untested after their publication, and a third have been
-found to be exaggerated or wrong by later research.\ :cite:p:`Ioannidis:2005gy`
-That's not as extreme as the Amgen result, but it makes you wonder what
-important errors still lurk unnoticed in important research. Replication is not
-as prevalent as we would like it to be, and the results are not always
-favorable.
+.. This is worrisome. Does the trend hold true for less speculative kinds of medical research? Apparently so: of the top-cited research articles in medicine, a quarter have gone untested after their publication, and a third have been found to be exaggerated or wrong by later research.\ :cite:p:`Ioannidis:2005gy` That's not as extreme as the Amgen result, but it makes you wonder what important errors still lurk unnoticed in important research. Replication is not as prevalent as we would like it to be, and the results are not always favorable.
 
 .. [#reproducibility]
    »The Reproducibility Project«», auf
