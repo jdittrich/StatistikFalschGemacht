@@ -22,7 +22,7 @@ Stellt dir beispielsweise vor, wir vergleichen zwei Patientengruppen, eine mit e
 
 .. For example, suppose we're comparing two groups of patients, one with a medication and one with a placebo. We measure the level of some protein in their bloodstreams as a way of seeing if the medication is working.  In this case, though, the medication causes no difference whatsoever: patients in both groups have the same average protein levels, although of course individuals have levels which vary slightly.
 
-wir beginnen mit zehn Patienten in jeder Testgruppe und sammeln Schritt für Schritt daten von zusätzlichen Patienten. Währenddessen machen wir einen *t*-Test um die Gruppen zu vergleichen und zu sehen, ob es einen statistisch signifikanten Unterschied zwischen den Proteinmengen gibt. Wir sehen vielleicht ein Resultat wie in dieser Simulation:
+Wir beginnen mit zehn Patienten in jeder Testgruppe und sammeln Schritt für Schritt daten von zusätzlichen Patienten. Währenddessen machen wir einen *t*-Test um die Gruppen zu vergleichen und zu sehen, ob es einen statistisch signifikanten Unterschied zwischen den Proteinmengen gibt. Wir sehen vielleicht ein Resultat wie in dieser Simulation:
 
 .. We start with ten patients in each group, and gradually collect more data from more patients. As we go along, we do a *t* test to compare the two groups and see if there is a statistically significant difference between average protein levels. We might see a result like this simulation:
 
@@ -70,9 +70,7 @@ Jetzt stell dir vor das wir den Versuch immer wieder durchführen. Manchmal gibt
 
 Du hast richtigerweise gefolgert, dass dein Medikament funktioniert. Du hast aber die Größe des Effektes künstlich vergrößert und glaubst fälschlicherweise das das Medikament eine viel stärker wirkt, als es dies tatsächlich tut.
 
-.. You've correctly concluded that your medication is effective, but you've
-inflated the size of its effect. You falsely believe it is much more effective
-than it really is.
+.. You've correctly concluded that your medication is effective, but you've inflated the size of its effect. You falsely believe it is much more effective than it really is.
 
 Der Effekt tritt auf in pharmakologischen Studien, epidemiologischen Studien, Studien zu genetischer Assoziation (»Gen A verursacht B«), psychologischen Studien und in einigen der meistzitierten Veröffentlichungen der medizinischen Literatur [Ioannidis:2008dy]_ [Ioannidis:2005gy]_ . Wenn Versuche von vielen verschiedenen Forschern gleichzeitig durchgeführt werden können (wie in Studien zu genetischer Assoziation) sind die frühesten veröffentlichten Ergebnisse oft sehr wiedersprüchlich, weil kleine Versuche und die Erfordernis der statistischen Signifikanz dazu führen, dass nur die extremsten Ergebnisse publiziert werden [Ioannidis:2005bj]_ .
 
@@ -108,34 +106,30 @@ Dann schaust du die die schlechtesten Schulen an. Du erwartest, dass sie alle gr
 
 Was passiert hier? Nun, schau auf einen Plot der Testergebnisse und der Schulgröße:
 
-... What's going on? Well, take a look at a plot of test scores vs. school size:
+.. What's going on? Well, take a look at a plot of test scores vs. school size:
 
 .. figure:: /plots/school-size.*
    :alt:
 
-Smaller schools have more widely varying average test scores, entirely because
-they have fewer students. With fewer students, there are fewer data points to
-establish the "true" performance of the teachers, and so the average scores vary
-widely. As schools get larger, test scores vary less, and in fact *increase* on
-average.
+Die durchschnittlichen Testergebnisse variieren stärker bei kleinen Schulen, einfach weil sie weniger Schüler haben. Mit weniger Schülern gibt es weniger Daten anhand derer die »wirkliche« Leistung der Lehrer festgestellt werden kann. Dadurch varrieren die Durschnittliche Punktzahlen stärker. Bei größeren Schulen variieren die Testergebnisse weniger und sind im Durchschnitt sogar *höher*. 
 
-This example used simulated data, but it's based on real (and surprising)
-observations of Pennsylvania public schools.\ :cite:p:`Wainer:2007wr`
+.. Smaller schools have more widely varying average test scores, entirely because they have fewer students. With fewer students, there are fewer data points to establish the "true" performance of the teachers, and so the average scores vary widely. As schools get larger, test scores vary less, and in fact *increase* on average.
 
-Another example: In the United States, counties with the lowest rates of
-:index:`kidney cancer` tend to be Midwestern, Southern and Western rural
-counties. How could this be? You can think of many explanations: rural people
-get more exercise, inhale less polluted air, and perhaps lead less stressful
-lives. Perhaps these factors lower their cancer rates.
+Dieses Beispiel nutzt simulierte Daten, aber es basiert auf echten (und überrschenden) Messungen an öffentlichen Schulen in Pennsylvania \ :cite:p:`Wainer:2007wr` .
 
-On the other hand, counties with the highest rates of kidney cancer tend to be
-Midwestern, Southern and Western rural counties.
+.. This example used simulated data, but it's based on real (and surprising) observations of Pennsylvania public schools.\ :cite:p:`Wainer:2007wr`
 
-The problem, of course, is that rural counties have the smallest populations. A
-single kidney cancer patient in a county with ten residents gives that county
-the highest kidney cancer rate in the nation. Small counties hence have vastly
-more variable kidney cancer rates, simply because they have so few
-residents.\ :cite:p:`Gelman:1999gi`
+Ein anderes Beispiel: Die Landkreise in den Vereinigten Staaten die die niedrigsten Anteil an Menschen mit :index`Nierenkrebs` haben sind oft in ländlichen Gegenden des Mittleren Westens, Südens und Westes. Wie kann das sein? Man kann sich viele erklärungen vorstellen: in ländlichen Gegenden gibt es frischen Luft, Menschen bewegen sich mehr und leben vielleicht ein weniger stressiges Leben. Vielleicht senken diese Faktoren die Krebsrate.  
+
+.. Another example: In the United States, counties with the lowest rates of :index:`kidney cancer` tend to be Midwestern, Southern and Western rural counties. How could this be? You can think of many explanations: rural people get more exercise, inhale less polluted air, and perhaps lead less stressful lives. Perhaps these factors lower their cancer rates.
+
+Andererseits sind die Landkreise mit den höchsten Krebsraten oft in ländlichen Gebieten des Mittleren Westes, Wesetes oder Südens der USA. 
+
+.. On the other hand, counties with the highest rates of kidney cancer tend to be Midwestern, Southern and Western rural counties.
+
+Das Problem, natürlich, ist das ländliche Landkreise die kleinste Einwohnerzahl haben. Ein einziger Patient mit Nierenkrebs in eine Landkreis mit zehn Einwohnern macht, dass dieser Landkreis die höchste Krebsrate in der ganzen Nation hat. Kleine Landkreise haben variablere Krebsraten, einfach weil sie so wenige Einwohner haben. \ :cite:p:`Gelman:1999g`i
+
+.. The problem, of course, is that rural counties have the smallest populations. A single kidney cancer patient in a county with ten residents gives that county the highest kidney cancer rate in the nation. Small counties hence have vastly more variable kidney cancer rates, simply because they have so few residents.\ :cite:p:`Gelman:1999gi`
 
 .. [Simmons:2011iw] Simmons, Joseph P., Leif D. Nelson, and Uri Simonsohn. "False-positive psychology undisclosed flexibility in data collection and analysis allows presenting anything as significant." Psychological science (2011): 0956797611417632.
 
@@ -150,3 +144,7 @@ residents.\ :cite:p:`Gelman:1999gi`
 .. [Bassler:2010ds] Bassler, Dirk, et al. "Stopping randomized trials early for benefit and estimation of treatment effects: systematic review and meta-regression analysis." Jama 303.12 (2010): 1180-1187.
 
 .. [Montori:2005bo] Montori, Victor M., et al. "Randomized trials stopped early for benefit: a systematic review." JOURNAL-AMERICAN MEDICAL ASSOCIATION 294.17 (2005): 2203.
+
+.. [Wainer:2007wr] Wainer, Howard. "The most dangerous equation." American Scientist 95.3 (2007): 249.
+
+.. [Gelman:1999gi] Gelman, Andrew, and Phillip N. Price. "All maps of parameter estimates are misleading." Statistics in medicine 18.23 (1999): 3221-3234.

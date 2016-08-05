@@ -100,10 +100,11 @@ Wir sehen, dass es publizierten Berichten in unserer Analysie nicht besonders gu
 .. We see that published papers aren't faring very well. What about *unpublished* studies?
 
 Wissenschaft im Aktenschrank
-----------------------------»
+-----------------------------
 
 .. Science in a filing cabinet
 .. ---------------------------
+
 In vorhergehenden Kapiteln haben wir den Einfluss von Mehrfachvergleichen und Wahrheitsinflation auf Studienergebnisse gesprochen. Die Probleme entstehen, wenn in den Studien mehrere Vergleichen mit niedriger Teststärke gemacht werden. Das führt zu einer großen Menge an fälschlicherweise positiven Ergebnissen und aufgeblasenen Schätzungen der Effektgrößen. Diese Probleme gibt es überall in wissenschaftlichen Veröffentlichungen. 
 
 
@@ -115,33 +116,37 @@ Aber nicht jede Studie wird veröffenticht. Wir bekommen nur einen kleinen Teil 
 
 .. But not every study is published. We only ever see a fraction of medical research, for instance, because few scientists bother publishing "We tried this medicine and it didn't seem to work."
 
-Hier ein Beispiel: Studien des Tumorsuppressor-Proteins TP53 und seine Wirkung auf Kopf- und Nackenkrebs. Eine Anzahl von Studien legt nahe, dass die Messung von TP53 genutzt werden können um die Mortalitätsraten der Kreberkrankung vorherzusagen, da das Protein dazu dient Zellwachstum und Entwicklung reguliert. Deshalb muss es korrekt funktionieren, damit Kebs verhindert wird. Nachdem alle 18 veröffentlichte Studien über TP53 und Krebs zusammen analysiert wurden, war das Ergebnis eine hohe, statistisch signifikante correlation: TP53 kann offensichtlich gemessen werden um herrauszufinden wie wahrscheinlich es ist, dass ein Tumor jemanden umbringt. 
+Hier ein Beispiel: Studien des Tumorsuppressor-Proteins TP53 und seine Wirkung auf Kopf- und Nackenkrebs. Eine Anzahl von Studien legt nahe, dass die Messung von TP53 genutzt werden können um die Mortalitätsraten der Kreberkrankung vorherzusagen, da das Protein dazu dient Zellwachstum und Entwicklung reguliert. Deshalb muss es korrekt funktionieren, damit Krebs verhindert wird. Nachdem alle 18 veröffentlichte Studien über TP53 und Krebs zusammen analysiert wurden, war das Ergebnis einen hohen, statistisch signifikanten Zusammenhang: TP53 kann offensichtlich gemessen werden, um herrauszufinden wie wahrscheinlich es ist, dass ein Tumor jemanden umbringt. 
 
 .. Consider an example: studies of the tumor suppressor protein TP53 and its effect on head and neck cancer. A number of studies suggested that measurements of TP53 could be used to predict cancer mortality rates, since it serves to regulate cell growth and development and hence must function correctly to prevent cancer. When all 18 published studies on TP53 and cancer were analyzed together, the result was a highly statistically significant correlation: TP53 could clearly be measured to tell how likely a tumor is to kill you.
 
-Aber nimm an, wir graben einige *unveröffentlichte* Ergebnisse zu TP53 aus: Daten die in anderen Studien erähnt wurden, aber nicht veröffentlicht oder anaysiert. Nimm auch diese Daten und der statistisch signifikante Effekt verschwindet. \ \ :cite:p:`Kyzas:2005ep` Schließlich kümmern sich nur wenige Autoren darum, Daten zu veröffentlichen, die keine signifikanten Korrelationen zeigen. So hatte die Meta-Analyse eine verzerrte Datenbasis. 
+Aber nimm an, wir graben einige *unveröffentlichte* Ergebnisse zu TP53 aus: Daten die in anderen Studien erähnt wurden, aber nicht veröffentlicht oder anaysiert. Nimm auch diese Daten und der statistisch signifikante Effekt verschwindet. \ \ :cite:p:`Kyzas:2005ep` Schließlich kümmern sich nur wenige Autoren darum, Daten zu veröffentlichen, die keine signifikanten Korrelationen zeigen. So hatte die Meta-Analyse eine verzerrte Datenbasis.
 
 .. But then suppose we dig up *unpublished* results on TP53: data that had been mentioned in other studies but not published or analyzed. Add this data to the mix and the statistically significant effect vanishes.\ :cite:p:`Kyzas:2005ep` After all, few authors bothered to publish data showing no correlation, so the meta-analysis could only use a biased sample.
 
-Eine ähnliche Studie schaute sich  reboxetine an, ein Antidepressivum, welches von Pfitzer verkauft wird. Mehrere veröffentlichte Studien legen nahe das reboxetine effektiver ist als ein Placebo. Das hat dazu geführt, dass mehrere Europäische Staten es als verschreibbares Medikament für depressive Patienten anerkannt haben. Das Deutsche Institut für Qualität und Effizienz im Gesundheistswesen ist verantwortlich für die medizinischer Behandlungen zu bewerten. Das Institut konnte unveröffentlichte Versuchsdaten von Pfizer bekommen -- dreimal mehr Daten as jemals dazu veröffentlicht wurden -- und hat diese Daten analysiert. Das Ergebnis: Reboxetine ist nicht effektiv. Pfizer hat die Öffentlichkeit nur von der Effektivität überzeugen können, weil sie die Studien vernachlässigten, die zeigten, dass das Medikamtne nicht effektiv ist. \ :cite:p:`Eyding:2010bx`
+Eine ähnliche Studie betrachtete Rebotoxine, ein Antidepressivum, das von Pfizer verkauft wird. Mehrer veröffentlichte Studien haben nahegelegt, dass Rebotoxine, im Vergleich zu einem Placebo wirksam ist. Das hat dazu geführt, dass einige europäische Staaten das Medikament für das Verschreiben an Patienten zuzulassen. Das Bundesinstitut für Arzneimittel und Medizinprodukte, dass für die Bewertung medizinischer Behandlungen zuständig ist, konnte unveröffentlichte Versuchsdaten von Pfitzer bekommen: Dreimal mehr als je veröffentlicht wurde. Die Daten wurden sorgfältig analysiert. Das Resultat: Rebotoxine ist vermutlich nicht wirksam. Pfizer hatte die Öffentlichkeit nur von der Wirkung überzeugt, weil sie Studien nicht erwähnten.
+
 
 .. A similar study looked at reboxetine, an antidepressant sold by Pfizer. Several published studies have suggested that it is effective compared to placebo, leading several European countries to approve it for prescription to depressed patients. The German Institute for Quality and Efficiency in Health Care, responsible for assessing medical treatments, managed to get unpublished trial data from Pfizer -- three times more data than had ever been published -- and carefully analyzed it. The result: reboxetine is not effective. Pfizer had only convinced the public that it's effective by neglecting to mention the studies proving it isn't.\ :cite:p:`Eyding:2010bx`
 
-Das Problem ist bekannt als »Publication-Bias« (Veröffentlichungs-Verzerrung) oder das Schubladen-Problem: Viele Studien bleiben für Jahre in der Schublade und werden nie veröffentlicht obwohl wertvollte Daten beigetragen werden könnten. 
+Dieses Problem ist als Veröffentlichungs-Verzerrung oder Schubladen-Problem bekannt. viele Studien liegen für jahre in der Schublade, werden nie veröffentlicht, obwohl wertvolle Daten beigetragen werden könnten. 
 
 .. This problem is commonly known as publication bias or the file-drawer problem: many studies sit in a file drawer for years, never published, despite the valuable data they could contribute.
 
-Das Problem ist nicht einfach die Verzerrung der Veröffentli	chten Ergebnisse. Unveröffentlichte Studien führen zu einer vervielfachung des Aufwandes -- wenn andere Wissenschaftler nciht wissen, dass du eine Studie durchgeführt hast, machen die anderen Wissenschaftler diese Studien nochmal und verschwenden dabei Geld und Mühen. 
+Das Problem ist nicht einfach die Verzerrung durch unveröffentlichte Daten. Unveröffentlichte Studien führen zu einer Vervielfachung des Aufwands – wenn andere Wissenschaftler nicht wissen, dass du eine Studie durchgeführt hast, forschen sie vielleicht wieder zum selben Thema und verschwenden Geld und Mühen. 
 
 .. The problem isn't simply the bias on published results. Unpublished studies lead to a duplication of effort -- if other scientists don't know you've done a study, they may well do it again, wasting money and effort.effort.
 
-Regulatoren und wissenschaftliche Journals haben versucht das Problem zu verhindert. Die Nahrungs- und Medikamenten-Verwaltung verlangt, dass bestimmte Arten von klinischen Versuchen innerhalb eines Jahres nach dem Studienende registriert werden. vergleichbarerweise hat dass Internationale Kommitee der Autoren medizinischer Journals 2005 angekündigt, dass nur noch Studien veröffentlicht werden die vorher registriert wurden.
+Regulierer und wissenschaftliche Journals haben versucht, das Problem einzudämmen. Die US-Amerikanische Food and Drug Administration verlangt, dass manche Arten von klinischen Versuchen auf ihrer Website ClinicalTrials.gov registriert werden müssen, bevor die Studie beginnt und macht es erforderlich, dass die Resultate innerhalb eines Jahres nach dem Ende des Versuches veröffentlicht werden müssen. Entsprechend hat auch das International Committee of Medical Journal Editors verkündet, dass nur noch Studien veröffentlicht werden die vorher registriert wurden.
+
 
 .. was sind genau 
 
 .. Regulators and scientific journals have attempted to halt this problem. The Food and Drug Administration requires certain kinds of clinical trials to be registered through their website ClinicalTrials.gov before the trials begin, and requires the publication of results within a year of the end of the trial. Similarly, the International Committee of Medical Journal Editors announced in 2005 that they would not publish studies which had not been pre-registered.
 
-Leider hat ein Review von 738 registrierten klinischen Studien ergeben, dass nur 22% die rechtlichen Anforderungen für eine veröffentlichung erfüllen konnten. Das FDA hat keine Strafen gegenüber Gesundheitskonzernen erhoben und Journals haben nicht immer diie Anforderung der versuchsregistrierung durchgesetzt. Die meisten Studien verschwinden einfach. 
+
+Leider hat eine Studie über 738 registrierte Versuche herrausefunden, dass nur 22% die rechtlichen Anforderungen für eine Veröffentlichung erfüllten. \ :cite:p:`Prayle:2011cs`. Die Food and Drug Administration hat keine Strafen auf Zuwiederhandlung für Pharmafirmen erhoben und die Journals haben die Anforderung für die Registrierung von versuchen nicht immer durchgesetzt. Die meisten Studien verschwinden einfach. 
+
 
 .. Unfortunately, a review of 738 registered clinical trials found that only 22% met the legal requirement to publish.\ :cite:p:`Prayle:2011cs` The FDA has not fined any drug companies for noncompliance, and journals have not consistently enforced the requirement to register trials. Most studies simply vanish.
 

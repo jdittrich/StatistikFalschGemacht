@@ -1,22 +1,25 @@
 .. _wrought:
 
-*********************
-What have we wrought?
-*********************
 
-I've painted a grim picture. But anyone can pick out small details in published
-studies and produce a tremendous list of errors. Do these problems matter? 
+********************
+Was haben wir getan?
+********************
 
-Well, yes. I wouldn't have written this otherwise.
+.. *********************
+.. What have we wrought?
+.. *********************
 
-John Ioannidis's famous article "Why Most Published Research Findings are
-False"\ :cite:p:`Ioannidis:2005bw` was grounded in mathematical concerns rather
-than an empirical test of research results. If most research articles have poor
-statistical power -- and :ref:`they do <power>` -- while researchers have the
-freedom to choose among multitudes of analyses methods to get favorable results
--- and :ref:`they do <freedom>` -- when most tested hypotheses are false and
-most true hypotheses correspond to very small effects, we are mathematically
-determined to get a multitude of false positives.
+Ich habe ein düsteres Bild gemalt. Aber jeder kann kleine Details aus Veröffentlichungen auswählen und eine lange Liste von Fehlern erstellen. Sind diese Probleme überhaupt wichtig?
+
+.. I've painted a grim picture. But anyone can pick out small details in published studies and produce a tremendous list of errors. Do these problems matter? 
+
+Nun, Ja. Ich hätte das hier sonst nicht geschrieben. 
+
+.. Well, yes. I wouldn't have written this otherwise.
+
+John Ioannidis berühmter Artikel »Why Most Published Research Findings are False«\ :cite:p:`Ioannidis:2005bw` beruhten  auf mathematischem Vorgehen anstatt empirischer Tests von Forschungsergebnissen. Wenn die meisten Artikel eine schlechte Statistische Power haben – und das `haben sie <power>` – während Forscher die Freiheit haben aus einer Vielzahl von Analysemethoden wählen können – und `das tun sie <freedom>` – …
+
+.. John Ioannidis's famous article "Why Most Published Research Findings are False"\ :cite:p:`Ioannidis:2005bw` was grounded in mathematical concerns rather than an empirical test of research results. If most research articles have poor statistical power -- and :ref:`they do <power>` -- while researchers have the freedom to choose among multitudes of analyses methods to get favorable results -- and :ref:`they do <freedom>` -- when most tested hypotheses are false and most true hypotheses correspond to very small effects, we are mathematically determined to get a multitude of false positives.
 
 .. index:: oncological ontology
 
